@@ -1,0 +1,70 @@
+@font-face {
+  font-family: "brush";
+  src: url(../font/BTCTRIAL.ttf);
+}
+div.l5r4.pc.alternative h1,
+div.l5r4.pc.alternative h2,
+div.l5r4.pc.alternative h3 {
+  font-family: "brush";
+  font-weight: bolder;
+}
+div.l5r4.pc.alternative .main-stats > *,
+div.l5r4.pc.alternative .sidebar > * {
+  padding: 8px;
+}
+div.l5r4.pc.alternative section.techniques-list.spells-list {
+  flex-direction: column;
+}
+div.l5r4.pc.alternative section.techniques-list.spells-list h3 {
+  text-align: center;
+  background-color: rgba(87, 81, 48, 0.205);
+  text-transform: uppercase;
+}
+div.l5r4.pc.alternative section.techniques-list.spells-list div.techniques,
+div.l5r4.pc.alternative section.techniques-list.spells-list div.spells {
+  display: flex;
+  flex-direction: column;
+}
+div.l5r4.pc.alternative section.techniques-list.spells-list div.techniques h4,
+div.l5r4.pc.alternative section.techniques-list.spells-list div.spells h4 {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  text-decoration: underline;
+  padding-left: 15px;
+}
+div.l5r4.pc.alternative section.techniques-list.spells-list div.techniques h4 img,
+div.l5r4.pc.alternative section.techniques-list.spells-list div.spells h4 img {
+  max-height: 2em;
+  border: none;
+  margin-right: 15%;
+}
+div.l5r4.pc.alternative section.techniques-list.spells-list div.techniques .item-border,
+div.l5r4.pc.alternative section.techniques-list.spells-list div.spells .item-border {
+  overflow: hidden;
+  transition: 0.3s;
+}
+div.l5r4.pc.alternative section.techniques-list.spells-list div.techniques .item-border:hover,
+div.l5r4.pc.alternative section.techniques-list.spells-list div.spells .item-border:hover {
+  background-color: rgba(100, 90, 34, 0.1);
+}
+div.l5r4.pc.alternative section.techniques-list.spells-list div.techniques .item-border.expanded .technique-stats,
+div.l5r4.pc.alternative section.techniques-list.spells-list div.techniques .item-border.expanded .spell-stats,
+div.l5r4.pc.alternative section.techniques-list.spells-list div.spells .item-border.expanded .technique-stats,
+div.l5r4.pc.alternative section.techniques-list.spells-list div.spells .item-border.expanded .spell-stats {
+  max-height: 200px;
+}
+div.l5r4.pc.alternative section.techniques-list.spells-list div.techniques .item-border .technique-stats,
+div.l5r4.pc.alternative section.techniques-list.spells-list div.techniques .item-border .spell-stats,
+div.l5r4.pc.alternative section.techniques-list.spells-list div.spells .item-border .technique-stats,
+div.l5r4.pc.alternative section.techniques-list.spells-list div.spells .item-border .spell-stats {
+  max-height: 1px;
+  transition: 0.2s;
+  overflow: hidden;
+}
+div.l5r4.pc.alternative section.techniques-list.spells-list div.techniques .item-border .details,
+div.l5r4.pc.alternative section.techniques-list.spells-list div.spells .item-border .details {
+  margin: 5px;
+  padding: 3px;
+  box-shadow: 0px 0px 30px rgba(128, 128, 128, 0.205) inset;
+}/*# sourceMappingURL=module.css.map */

@@ -5,6 +5,11 @@ export const preloadTemplates = async function () {
 
         // Actor Sheet Partials
         "modules/alternative-L5R4e-sheet/templates/character.html",
+        "modules/alternative-L5R4e-sheet/templates/partials/pc-stats.hbs",
+        "modules/alternative-L5R4e-sheet/templates/partials/pc-spells-techniques.hbs",
+        "modules/alternative-L5R4e-sheet/templates/partials/technique-card.hbs",
+        "modules/alternative-L5R4e-sheet/templates/partials/spell-card.hbs"
+
     ];
 
     // Load the template parts

@@ -17,9 +17,17 @@ export default class altSheetL5R4 extends ActorSL5R4PcSheetheet5e {
 
     activateListeners(html) {
         super.activateListeners(html);
-
+        html.find(".expandable a.expand").click(this.toggleExpand.bind(this))
 
     }
 
+    toggleExpand(ev) {
+        let row = ev.currentTarget.closest(".item-border");
+        row.classList.toggle("expanded");
+        let icone = ev.currentTarget.children[0];
+        icone.classList.toggle("fa-arrow-down");
+        icone.classList.toggle("fa-arrow-up");
 
+
+    }
 }

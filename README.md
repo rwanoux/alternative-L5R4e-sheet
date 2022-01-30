@@ -7,7 +7,7 @@
 <!--- replace <your-module-name> with the `name` in your manifest -->
 <!--- ![Forge Installs](https://img.shields.io/badge/dynamic/json?label=Forge%20Installs&query=package.installs&suffix=%25&url=https%3A%2F%2Fforge-vtt.com%2Fapi%2Fbazaar%2Fpackage%2F<your-module-name>&colorB=4aa94a) -->
 
-
+<!---
 # How to use this Template to create a versioned Release
 
 1. Open your repository's releases page.
@@ -62,10 +62,10 @@ When listing a new version, Version should be the version number you set above, 
 > It is very important that you use the specific release manifest url, and not the `/latest` url here. For more details about why this is important and how Foundry Installs/Updates packages, read [this wiki article](https://foundryvtt.wiki/en/development/guides/releases-and-history).
 
 Clicking "Save" in the bottom right will save the new version, which means that anyone installing your module from within Foundry will get that version, and a post will be generated in the #release-announcements channel on the official Foundry VTT Discord.
-
+ -->
 
 # FoundryVTT Module
 
-Does something, probably
+an alternate character sheet for Legend of the 5 rings 4e
 
 ## Changelog
