@@ -1,0 +1,49 @@
+<div class="item-border {{data.type}}">
+  <div class="weapon-card item" data-item-id="{{_id}}">
+    <div class="weapon-info weapon-name">
+      {{#if inSheet}}
+      <h3 title="{{localize "l5r4.sheet.edit"}}">
+        <a class="item-edit">{{name}}</a>
+      </h3>
+      <a class="weapon-roll">
+        <img title="{{localize "l5r4.mech.damageRoll"}}" src="icons/dice/d10black.svg" />
+      </a>
+      {{/if}}
+      {{#unless inSheet}}
+        <h3 title="{{localize "l5r4.sheet.edit"}}">
+          {{name}}
+        </h3>
+      {{/unless}}
+    </div>
+    <div class="weapon-info weapon-stats">
+      <div>
+        {{#if ranged}}
+        {{localize "l5r4.weapon.str"}}: {{data.str}}
+        {{/if}}
+        {{#unless ranged}}
+        {{localize "l5r4.weapon.damage"}}: {{data.damageRoll}}k{{data.damageKeep}}
+        {{/unless}}
+      </div>
+      <div>
+        {{#if ranged}}
+        <div>
+          {{localize "l5r4.weapon.damage"}}: {{data.damageRoll}}k{{data.damageKeep}}
+        </div>
+        <select class="arrow-type inline-edit" data-field="data.arrow">
+          <option selected disabled>{{localize "l5r4.weapon.arrow"}}</option>
+          {{#select data.arrow}}
+          {{#each @root.config.arrows as |name type|}}
+          <option value="{{type}}">{{localize name}}</option>
+          {{/each}}
+          {{/select}}
+        </select>
+        {{/if}}
+      </div>
+    </div>
+    {{#unless inSheet}}
+      <div class="spell-effects">
+        {{{data.description}}}
+      </div>
+      {{/unless}}
+  </div>
+</div>
