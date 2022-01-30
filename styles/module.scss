@@ -77,7 +77,8 @@ div.l5r4.pc.alternative {
                     .spell-stats,
                     .weapon-stats,
                     .armor-stats {
-                        max-height: 800px;
+                        max-height: 400px;
+                        overflow: scroll;
                     }
                 }
 

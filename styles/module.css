@@ -137,7 +137,8 @@ div.l5r4.pc.alternative section.equipment-list div.weapons .item-border.expanded
 div.l5r4.pc.alternative section.equipment-list div.weapons .item-border.expanded .spell-stats,
 div.l5r4.pc.alternative section.equipment-list div.weapons .item-border.expanded .weapon-stats,
 div.l5r4.pc.alternative section.equipment-list div.weapons .item-border.expanded .armor-stats {
-  max-height: 800px;
+  max-height: 400px;
+  overflow: scroll;
 }
 div.l5r4.pc.alternative section.techniques-list.spells-list div.techniques .item-border .details,
 div.l5r4.pc.alternative section.techniques-list.spells-list div.spells .item-border .details,
