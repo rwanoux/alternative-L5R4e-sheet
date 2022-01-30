@@ -1,20 +1,26 @@
-<div class="item-border {{data.type}}">
+<div class="item-border expandable{{data.type}}">
   <div class="weapon-card item" data-item-id="{{_id}}">
+
     <div class="weapon-info weapon-name">
       {{#if inSheet}}
-      <h3 title="{{localize "l5r4.sheet.edit"}}">
+      <img src="{{img}}">
+      <h4 title="{{localize " l5r4.sheet.edit"}}">
         <a class="item-edit">{{name}}</a>
-      </h3>
+        <a class="expand">
+          <i class="fas fa-arrow-down" title="expand details"></i>
+        </a>
+      </h4>
       <a class="weapon-roll">
-        <img title="{{localize "l5r4.mech.damageRoll"}}" src="icons/dice/d10black.svg" />
+        <img title="{{localize " l5r4.mech.damageRoll"}}" src="icons/dice/d10black.svg" />
       </a>
       {{/if}}
       {{#unless inSheet}}
-        <h3 title="{{localize "l5r4.sheet.edit"}}">
-          {{name}}
-        </h3>
+      <h4 title="{{localize " l5r4.sheet.edit"}}">
+        {{name}}
+      </h4>
       {{/unless}}
     </div>
+
     <div class="weapon-info weapon-stats">
       <div>
         {{#if ranged}}
@@ -39,11 +45,12 @@
         </select>
         {{/if}}
       </div>
-    </div>
-    {{#unless inSheet}}
+      {{#unless inSheet}}
       <div class="spell-effects">
         {{{data.description}}}
       </div>
       {{/unless}}
+    </div>
+
   </div>
 </div>

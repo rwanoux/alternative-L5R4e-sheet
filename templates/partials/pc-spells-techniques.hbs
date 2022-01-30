@@ -1,25 +1,30 @@
 <section class="spells techniques panelBorder">
-  <h2>
-    <div>{{localize "l5r4.sheet.techniques"}}/{{localize "l5r4.sheet.spells"}}</div>
-    <a class="item-create" data-type="spell" title="{{localize " l5r4.sheet.addTechSpell"}}">
-      <i class="fas fa-plus"></i>
-    </a>
-  </h2>
-  <section class="techniques-list spells-list flexcol">
-    <h3>techniques</h3>
-    <div class="techniques flexrow">
 
-      {{#each techniques as |technique id|}}
-      {{> "modules/alternative-L5R4e-sheet/templates/partials/technique-card.hbs" technique inSheet=true}}
-      {{/each}}
+  <section class="techniques-list spells-list flexrow">
+    <div>
+      <h2>techniques
+        <a class="item-create" data-type="technique">
+          <i class="fas fa-plus"></i>
+        </a>
+      </h2>
+      <div class="techniques flexrow">
+
+        {{#each techniques as |technique id|}}
+        {{> "modules/alternative-L5R4e-sheet/templates/partials/technique-card.hbs" technique inSheet=true}}
+        {{/each}}
+      </div>
     </div>
-
-    <h3>spells</h3>
-    <div class="spells flexrow">
-      {{#each spells as |spell id|}}
-      {{> "modules/alternative-L5R4e-sheet/templates/partials/spell-card.hbs" spell inSheet=true}}
-      {{/each}}
+    <div>
+      <h2>spells
+        <a class="item-create" data-type="spell">
+          <i class="fas fa-plus"></i>
+        </a>
+      </h2>
+      <div class="spells flexrow">
+        {{#each spells as |spell id|}}
+        {{> "modules/alternative-L5R4e-sheet/templates/partials/spell-card.hbs" spell inSheet=true}}
+        {{/each}}
+      </div>
     </div>
-
   </section>
 </section>

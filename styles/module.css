@@ -3,68 +3,186 @@
   src: url(../font/BTCTRIAL.ttf);
 }
 div.l5r4.pc.alternative h1,
-div.l5r4.pc.alternative h2,
-div.l5r4.pc.alternative h3 {
+div.l5r4.pc.alternative h2 {
+  width: 100%;
+  margin-top: 8px;
+  border-top: 1px solid gray;
+  border-bottom: none;
   font-family: "brush";
   font-weight: bolder;
+  text-align: center;
+  padding-left: 20%;
+  vertical-align: middle;
+  background: linear-gradient(45deg, rgba(255, 245, 229, 0.0844712885) 0%, rgba(196, 191, 34, 0.4206057423) 100%);
 }
 div.l5r4.pc.alternative .main-stats > *,
 div.l5r4.pc.alternative .sidebar > * {
   padding: 8px;
 }
-div.l5r4.pc.alternative section.techniques-list.spells-list {
-  flex-direction: column;
+div.l5r4.pc.alternative .skill-item:nth-child(odd) {
+  background-color: rgba(221, 224, 14, 0.349);
 }
-div.l5r4.pc.alternative section.techniques-list.spells-list h3 {
+div.l5r4.pc.alternative .skill-item:nth-child(even) {
+  background-color: rgba(163, 163, 162, 0.507);
+}
+div.l5r4.pc.alternative section.techniques-list.spells-list h3,
+div.l5r4.pc.alternative section.equipment-list h3 {
   text-align: center;
   background-color: rgba(87, 81, 48, 0.205);
   text-transform: uppercase;
 }
 div.l5r4.pc.alternative section.techniques-list.spells-list div.techniques,
-div.l5r4.pc.alternative section.techniques-list.spells-list div.spells {
+div.l5r4.pc.alternative section.techniques-list.spells-list div.spells,
+div.l5r4.pc.alternative section.techniques-list.spells-list div.weapons,
+div.l5r4.pc.alternative section.equipment-list div.techniques,
+div.l5r4.pc.alternative section.equipment-list div.spells,
+div.l5r4.pc.alternative section.equipment-list div.weapons {
   display: flex;
   flex-direction: column;
 }
+div.l5r4.pc.alternative section.techniques-list.spells-list div.techniques:nth-child(odd),
+div.l5r4.pc.alternative section.techniques-list.spells-list div.spells:nth-child(odd),
+div.l5r4.pc.alternative section.techniques-list.spells-list div.weapons:nth-child(odd),
+div.l5r4.pc.alternative section.equipment-list div.techniques:nth-child(odd),
+div.l5r4.pc.alternative section.equipment-list div.spells:nth-child(odd),
+div.l5r4.pc.alternative section.equipment-list div.weapons:nth-child(odd) {
+  background-color: rgba(155, 150, 145, 0.239);
+}
 div.l5r4.pc.alternative section.techniques-list.spells-list div.techniques h4,
-div.l5r4.pc.alternative section.techniques-list.spells-list div.spells h4 {
+div.l5r4.pc.alternative section.techniques-list.spells-list div.spells h4,
+div.l5r4.pc.alternative section.techniques-list.spells-list div.weapons h4,
+div.l5r4.pc.alternative section.equipment-list div.techniques h4,
+div.l5r4.pc.alternative section.equipment-list div.spells h4,
+div.l5r4.pc.alternative section.equipment-list div.weapons h4 {
   display: flex;
   flex-direction: row;
   justify-content: space-around;
-  text-decoration: underline;
   padding-left: 15px;
 }
 div.l5r4.pc.alternative section.techniques-list.spells-list div.techniques h4 img,
-div.l5r4.pc.alternative section.techniques-list.spells-list div.spells h4 img {
+div.l5r4.pc.alternative section.techniques-list.spells-list div.spells h4 img,
+div.l5r4.pc.alternative section.techniques-list.spells-list div.weapons h4 img,
+div.l5r4.pc.alternative section.equipment-list div.techniques h4 img,
+div.l5r4.pc.alternative section.equipment-list div.spells h4 img,
+div.l5r4.pc.alternative section.equipment-list div.weapons h4 img {
   max-height: 2em;
   border: none;
   margin-right: 15%;
 }
 div.l5r4.pc.alternative section.techniques-list.spells-list div.techniques .item-border,
-div.l5r4.pc.alternative section.techniques-list.spells-list div.spells .item-border {
-  overflow: hidden;
+div.l5r4.pc.alternative section.techniques-list.spells-list div.spells .item-border,
+div.l5r4.pc.alternative section.techniques-list.spells-list div.weapons .item-border,
+div.l5r4.pc.alternative section.equipment-list div.techniques .item-border,
+div.l5r4.pc.alternative section.equipment-list div.spells .item-border,
+div.l5r4.pc.alternative section.equipment-list div.weapons .item-border {
   transition: 0.3s;
 }
 div.l5r4.pc.alternative section.techniques-list.spells-list div.techniques .item-border:hover,
-div.l5r4.pc.alternative section.techniques-list.spells-list div.spells .item-border:hover {
+div.l5r4.pc.alternative section.techniques-list.spells-list div.spells .item-border:hover,
+div.l5r4.pc.alternative section.techniques-list.spells-list div.weapons .item-border:hover,
+div.l5r4.pc.alternative section.equipment-list div.techniques .item-border:hover,
+div.l5r4.pc.alternative section.equipment-list div.spells .item-border:hover,
+div.l5r4.pc.alternative section.equipment-list div.weapons .item-border:hover {
   background-color: rgba(100, 90, 34, 0.1);
 }
 div.l5r4.pc.alternative section.techniques-list.spells-list div.techniques .item-border.expanded .technique-stats,
 div.l5r4.pc.alternative section.techniques-list.spells-list div.techniques .item-border.expanded .spell-stats,
+div.l5r4.pc.alternative section.techniques-list.spells-list div.techniques .item-border.expanded .weapon-stats,
+div.l5r4.pc.alternative section.techniques-list.spells-list div.techniques .item-border.expanded .armor-stats,
 div.l5r4.pc.alternative section.techniques-list.spells-list div.spells .item-border.expanded .technique-stats,
-div.l5r4.pc.alternative section.techniques-list.spells-list div.spells .item-border.expanded .spell-stats {
-  max-height: 200px;
+div.l5r4.pc.alternative section.techniques-list.spells-list div.spells .item-border.expanded .spell-stats,
+div.l5r4.pc.alternative section.techniques-list.spells-list div.spells .item-border.expanded .weapon-stats,
+div.l5r4.pc.alternative section.techniques-list.spells-list div.spells .item-border.expanded .armor-stats,
+div.l5r4.pc.alternative section.techniques-list.spells-list div.weapons .item-border.expanded .technique-stats,
+div.l5r4.pc.alternative section.techniques-list.spells-list div.weapons .item-border.expanded .spell-stats,
+div.l5r4.pc.alternative section.techniques-list.spells-list div.weapons .item-border.expanded .weapon-stats,
+div.l5r4.pc.alternative section.techniques-list.spells-list div.weapons .item-border.expanded .armor-stats,
+div.l5r4.pc.alternative section.equipment-list div.techniques .item-border.expanded .technique-stats,
+div.l5r4.pc.alternative section.equipment-list div.techniques .item-border.expanded .spell-stats,
+div.l5r4.pc.alternative section.equipment-list div.techniques .item-border.expanded .weapon-stats,
+div.l5r4.pc.alternative section.equipment-list div.techniques .item-border.expanded .armor-stats,
+div.l5r4.pc.alternative section.equipment-list div.spells .item-border.expanded .technique-stats,
+div.l5r4.pc.alternative section.equipment-list div.spells .item-border.expanded .spell-stats,
+div.l5r4.pc.alternative section.equipment-list div.spells .item-border.expanded .weapon-stats,
+div.l5r4.pc.alternative section.equipment-list div.spells .item-border.expanded .armor-stats,
+div.l5r4.pc.alternative section.equipment-list div.weapons .item-border.expanded .technique-stats,
+div.l5r4.pc.alternative section.equipment-list div.weapons .item-border.expanded .spell-stats,
+div.l5r4.pc.alternative section.equipment-list div.weapons .item-border.expanded .weapon-stats,
+div.l5r4.pc.alternative section.equipment-list div.weapons .item-border.expanded .armor-stats {
+  max-height: unset;
 }
 div.l5r4.pc.alternative section.techniques-list.spells-list div.techniques .item-border .technique-stats,
 div.l5r4.pc.alternative section.techniques-list.spells-list div.techniques .item-border .spell-stats,
+div.l5r4.pc.alternative section.techniques-list.spells-list div.techniques .item-border .weapon-stats,
+div.l5r4.pc.alternative section.techniques-list.spells-list div.techniques .item-border .armor-stats,
 div.l5r4.pc.alternative section.techniques-list.spells-list div.spells .item-border .technique-stats,
-div.l5r4.pc.alternative section.techniques-list.spells-list div.spells .item-border .spell-stats {
+div.l5r4.pc.alternative section.techniques-list.spells-list div.spells .item-border .spell-stats,
+div.l5r4.pc.alternative section.techniques-list.spells-list div.spells .item-border .weapon-stats,
+div.l5r4.pc.alternative section.techniques-list.spells-list div.spells .item-border .armor-stats,
+div.l5r4.pc.alternative section.techniques-list.spells-list div.weapons .item-border .technique-stats,
+div.l5r4.pc.alternative section.techniques-list.spells-list div.weapons .item-border .spell-stats,
+div.l5r4.pc.alternative section.techniques-list.spells-list div.weapons .item-border .weapon-stats,
+div.l5r4.pc.alternative section.techniques-list.spells-list div.weapons .item-border .armor-stats,
+div.l5r4.pc.alternative section.equipment-list div.techniques .item-border .technique-stats,
+div.l5r4.pc.alternative section.equipment-list div.techniques .item-border .spell-stats,
+div.l5r4.pc.alternative section.equipment-list div.techniques .item-border .weapon-stats,
+div.l5r4.pc.alternative section.equipment-list div.techniques .item-border .armor-stats,
+div.l5r4.pc.alternative section.equipment-list div.spells .item-border .technique-stats,
+div.l5r4.pc.alternative section.equipment-list div.spells .item-border .spell-stats,
+div.l5r4.pc.alternative section.equipment-list div.spells .item-border .weapon-stats,
+div.l5r4.pc.alternative section.equipment-list div.spells .item-border .armor-stats,
+div.l5r4.pc.alternative section.equipment-list div.weapons .item-border .technique-stats,
+div.l5r4.pc.alternative section.equipment-list div.weapons .item-border .spell-stats,
+div.l5r4.pc.alternative section.equipment-list div.weapons .item-border .weapon-stats,
+div.l5r4.pc.alternative section.equipment-list div.weapons .item-border .armor-stats {
   max-height: 1px;
   transition: 0.2s;
   overflow: hidden;
 }
 div.l5r4.pc.alternative section.techniques-list.spells-list div.techniques .item-border .details,
-div.l5r4.pc.alternative section.techniques-list.spells-list div.spells .item-border .details {
+div.l5r4.pc.alternative section.techniques-list.spells-list div.spells .item-border .details,
+div.l5r4.pc.alternative section.techniques-list.spells-list div.weapons .item-border .details,
+div.l5r4.pc.alternative section.equipment-list div.techniques .item-border .details,
+div.l5r4.pc.alternative section.equipment-list div.spells .item-border .details,
+div.l5r4.pc.alternative section.equipment-list div.weapons .item-border .details {
   margin: 5px;
   padding: 3px;
   box-shadow: 0px 0px 30px rgba(128, 128, 128, 0.205) inset;
+}
+div.l5r4.pc.alternative .equipment-list,
+div.l5r4.pc.alternative .weapons-list {
+  display: unset;
+}
+div.l5r4.pc.alternative .equipment-list img,
+div.l5r4.pc.alternative .weapons-list img {
+  max-height: 2em;
+  border: none;
+  margin: 0% 15%;
+  width: 2em;
+  height: 2em;
+}
+div.l5r4.pc.alternative .item {
+  border-bottom: 1px solid black;
+}
+div.l5r4.pc.alternative div.sidebar {
+  margin-left: 20px;
+  box-shadow: -30px 0px 60px;
+  background: url(/systems/l5r4/assets/textures/scroll2.webp);
+}
+div.l5r4.pc.alternative .pc-info {
+  margin-left: -30px;
+  box-shadow: 0px 20px 60px;
+  margin-bottom: 20px;
+  padding: 0px 50px;
+  width: 115%;
+}
+div.l5r4.pc.alternative .pc-info input {
+  font-family: "brush";
+  font-size: 2em;
+  height: 2.1em;
+}
+div.l5r4.pc.alternative .pc-info h3 {
+  position: relative;
+  top: 10px;
+  transform: rotate(-5deg);
 }/*# sourceMappingURL=module.css.map */

@@ -8,7 +8,10 @@ export const preloadTemplates = async function () {
         "modules/alternative-L5R4e-sheet/templates/partials/pc-stats.hbs",
         "modules/alternative-L5R4e-sheet/templates/partials/pc-spells-techniques.hbs",
         "modules/alternative-L5R4e-sheet/templates/partials/technique-card.hbs",
-        "modules/alternative-L5R4e-sheet/templates/partials/spell-card.hbs"
+        "modules/alternative-L5R4e-sheet/templates/partials/spell-card.hbs",
+        "modules/alternative-L5R4e-sheet/templates/partials/pc-equipment.hbs",
+        "modules/alternative-L5R4e-sheet/templates/partials/weapon-card.hbs",
+        "modules/alternative-L5R4e-sheet/templates/partials/armor-card.hbs",
 
     ];
 

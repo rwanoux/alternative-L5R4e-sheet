@@ -15,9 +15,34 @@ export default class altSheetL5R4 extends ActorSL5R4PcSheetheet5e {
         return "modules/alternative-L5R4e-sheet/templates/character.html";
     }
 
+    itemContextMenu = [
+        {
+            name: game.i18n.localize("l5r4.sheet.edit"),
+            icon: '<i class="fas fa-edit"></i>',
+            callback: element => {
+                const item = this.actor.items.get(element.data("item-id"));
+                item.sheet.render(true);
+            }
+        },
+        {
+            name: game.i18n.localize("l5r4.mech.toChat"),
+            icon: '<i class="fas fa-comment"></i>',
+            callback: element => {
+                let item = this.actor.items.get(element.data("item-id"));
+                item.roll();
+            }
+        },
+        {
+            name: game.i18n.localize("l5r4.sheet.delete"),
+            icon: '<i class="fas fa-trash"></i>',
+            callback: element => {
+                this.actor.deleteEmbeddedDocuments("Item", [element.data("item-id")]);
+            }
+        }
+    ];
     activateListeners(html) {
-        super.activateListeners(html);
         html.find(".expandable a.expand").click(this.toggleExpand.bind(this))
+        super.activateListeners(html);
 
     }
 

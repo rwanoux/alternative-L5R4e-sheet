@@ -4,24 +4,45 @@
 }
 div.l5r4.pc.alternative {
     h1,
-    h2,
-    h3 {
+    h2 {
+        width: 100%;
+        margin-top: 8px;
+        border-top: 1px solid gray;
+        border-bottom: none;
         font-family: "brush";
         font-weight: bolder;
+        text-align: center;
+        padding-left: 20%;
+        vertical-align: middle;
+        background: linear-gradient(
+            45deg,
+            rgba(255, 245, 229, 0.0844712885154062) 0%,
+            rgba(196, 191, 34, 0.4206057422969187) 100%
+        );
     }
     .main-stats > *,
     .sidebar > * {
         padding: 8px;
     }
-    section.techniques-list.spells-list {
-        flex-direction: column;
+    .skill-item:nth-child(odd) {
+        background-color: rgba(221, 224, 14, 0.349);
+    }
+    .skill-item:nth-child(even) {
+        background-color: rgba(163, 163, 162, 0.507);
+    }
+    section.techniques-list.spells-list,
+    section.equipment-list {
         h3 {
             text-align: center;
             background-color: rgba(87, 81, 48, 0.205);
             text-transform: uppercase;
         }
         div.techniques,
-        div.spells {
+        div.spells,
+        div.weapons {
+            &:nth-child(odd) {
+                background-color: rgba(155, 150, 145, 0.239);
+            }
             display: flex;
             flex-direction: column;
 
@@ -29,7 +50,6 @@ div.l5r4.pc.alternative {
                 display: flex;
                 flex-direction: row;
                 justify-content: space-around;
-                text-decoration: underline;
                 padding-left: 15px;
 
                 img {
@@ -39,7 +59,6 @@ div.l5r4.pc.alternative {
                 }
             }
             .item-border {
-                overflow: hidden;
                 transition: 0.3s;
 
                 &:hover {
@@ -47,12 +66,16 @@ div.l5r4.pc.alternative {
                 }
                 &.expanded {
                     .technique-stats,
-                    .spell-stats {
-                        max-height: 200px;
+                    .spell-stats,
+                    .weapon-stats,
+                    .armor-stats {
+                        max-height: unset;
                     }
                 }
                 .technique-stats,
-                .spell-stats {
+                .spell-stats,
+                .weapon-stats,
+                .armor-stats {
                     max-height: 1px;
                     transition: 0.2s;
                     overflow: hidden;
@@ -63,6 +86,42 @@ div.l5r4.pc.alternative {
                     box-shadow: 0px 0px 30px rgba(128, 128, 128, 0.205) inset;
                 }
             }
+        }
+    }
+    .equipment-list,
+    .weapons-list {
+        display: unset;
+        img {
+            max-height: 2em;
+            border: none;
+            margin: 0% 15%;
+            width: 2em;
+            height: 2em;
+        }
+    }
+    .item {
+        border-bottom: 1px solid black;
+    }
+    div.sidebar {
+        margin-left: 20px;
+        box-shadow: -30px 0px 60px;
+        background: url(/systems/l5r4/assets/textures/scroll2.webp);
+    }
+    .pc-info {
+        margin-left: -30px;
+        box-shadow: 0px 20px 60px;
+        margin-bottom: 20px;
+        padding: 0px 50px;
+        width: 115%;
+        input {
+            font-family: "brush";
+            font-size: 2em;
+            height: 2.1em;
+        }
+        h3 {
+            position: relative;
+            top: 10px;
+            transform: rotate(-5deg);
         }
     }
 }

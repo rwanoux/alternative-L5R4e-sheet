@@ -1,24 +1,38 @@
 <section class="equipment panelBorder">
-  <h2>
-    <div>{{localize "l5r4.sheet.equipment"}}</div>
-    <a class="item-create" data-type="equipment" title="{{localize "l5r4.sheet.addEquipment"}}">
-      <i class="fas fa-plus"></i>
-    </a>
-  </h2>
+
   <section class="equipment-list">
     <section class="weapons-list">
-      {{#each weapons as |weapon id|}}
-      {{> "systems/l5r4/templates/partials/weapon-card.hbs" weapon ranged=false inSheet=true}}
-      {{/each}}
+      <h2>
+        <div>{{localize "l5r4.sheet.equipment"}}</div>
 
-      {{#each bows as |weapon id|}}
-      {{> "systems/l5r4/templates/partials/weapon-card.hbs" weapon ranged=true inSheet=true}}
-      {{/each}}
+      </h2>
+      <div class="weapons flexrow">
+        <h3>{{localize "l5r4.weapon.typeWeapon"}}
+          <a class="item-create" data-type="weapon">
+            <i class="fas fa-plus"></i>
+          </a>
+        </h3>
+        {{#each weapons as |weapon id|}}
+        {{> "modules/alternative-L5R4e-sheet/templates/partials/weapon-card.hbs" weapon ranged=false inSheet=true}}
+        {{/each}}
+        <h3>{{localize "l5r4.weapon.typeBow"}}
+          <a class="item-create" data-type="bow">
+            <i class="fas fa-plus"></i>
+          </a>
+        </h3>
+        {{#each bows as |weapon id|}}
+        {{> "modules/alternative-L5R4e-sheet/templates/partials/weapon-card.hbs" weapon ranged=true inSheet=true}}
+        {{/each}}
+        <h3>{{localize "l5r4.armor.name"}}
+          <a class="item-create" data-type="armor">
+            <i class="fas fa-plus"></i>
+          </a>
+        </h3>
+        {{#each armors as |armor id|}}
+        {{> "modules/alternative-L5R4e-sheet/templates/partials/armor-card.hbs" armor inSheet=true}}
+        {{/each}}
+      </div>
     </section>
-    <section class="armors-list">
-      {{#each armors as |armor id|}}
-      {{> "systems/l5r4/templates/partials/armor-card.hbs" armor inSheet=true}}
-      {{/each}}
-    </section>
+
   </section>
 </section>
