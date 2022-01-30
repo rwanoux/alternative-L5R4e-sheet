@@ -64,22 +64,23 @@ div.l5r4.pc.alternative {
                 &:hover {
                     background-color: rgba(100, 90, 34, 0.1);
                 }
-                &.expanded {
-                    .technique-stats,
-                    .spell-stats,
-                    .weapon-stats,
-                    .armor-stats {
-                        max-height: unset;
-                    }
-                }
                 .technique-stats,
                 .spell-stats,
                 .weapon-stats,
                 .armor-stats {
                     max-height: 1px;
-                    transition: 0.2s;
+                    transition: 0.4s;
                     overflow: hidden;
                 }
+                &.expanded {
+                    .technique-stats,
+                    .spell-stats,
+                    .weapon-stats,
+                    .armor-stats {
+                        max-height: 800px;
+                    }
+                }
+
                 .details {
                     margin: 5px;
                     padding: 3px;
@@ -104,8 +105,10 @@ div.l5r4.pc.alternative {
     }
     div.sidebar {
         margin-left: 20px;
-        box-shadow: -30px 0px 60px;
+        box-shadow: -30px 0px 60px rgba(0, 0, 0, 0.438);
         background: url(/systems/l5r4/assets/textures/scroll2.webp);
+        background-size: auto 100%;
+        height: fit-content;
     }
     .pc-info {
         margin-left: -30px;

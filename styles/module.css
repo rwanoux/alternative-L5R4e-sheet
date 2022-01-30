@@ -85,32 +85,6 @@ div.l5r4.pc.alternative section.equipment-list div.spells .item-border:hover,
 div.l5r4.pc.alternative section.equipment-list div.weapons .item-border:hover {
   background-color: rgba(100, 90, 34, 0.1);
 }
-div.l5r4.pc.alternative section.techniques-list.spells-list div.techniques .item-border.expanded .technique-stats,
-div.l5r4.pc.alternative section.techniques-list.spells-list div.techniques .item-border.expanded .spell-stats,
-div.l5r4.pc.alternative section.techniques-list.spells-list div.techniques .item-border.expanded .weapon-stats,
-div.l5r4.pc.alternative section.techniques-list.spells-list div.techniques .item-border.expanded .armor-stats,
-div.l5r4.pc.alternative section.techniques-list.spells-list div.spells .item-border.expanded .technique-stats,
-div.l5r4.pc.alternative section.techniques-list.spells-list div.spells .item-border.expanded .spell-stats,
-div.l5r4.pc.alternative section.techniques-list.spells-list div.spells .item-border.expanded .weapon-stats,
-div.l5r4.pc.alternative section.techniques-list.spells-list div.spells .item-border.expanded .armor-stats,
-div.l5r4.pc.alternative section.techniques-list.spells-list div.weapons .item-border.expanded .technique-stats,
-div.l5r4.pc.alternative section.techniques-list.spells-list div.weapons .item-border.expanded .spell-stats,
-div.l5r4.pc.alternative section.techniques-list.spells-list div.weapons .item-border.expanded .weapon-stats,
-div.l5r4.pc.alternative section.techniques-list.spells-list div.weapons .item-border.expanded .armor-stats,
-div.l5r4.pc.alternative section.equipment-list div.techniques .item-border.expanded .technique-stats,
-div.l5r4.pc.alternative section.equipment-list div.techniques .item-border.expanded .spell-stats,
-div.l5r4.pc.alternative section.equipment-list div.techniques .item-border.expanded .weapon-stats,
-div.l5r4.pc.alternative section.equipment-list div.techniques .item-border.expanded .armor-stats,
-div.l5r4.pc.alternative section.equipment-list div.spells .item-border.expanded .technique-stats,
-div.l5r4.pc.alternative section.equipment-list div.spells .item-border.expanded .spell-stats,
-div.l5r4.pc.alternative section.equipment-list div.spells .item-border.expanded .weapon-stats,
-div.l5r4.pc.alternative section.equipment-list div.spells .item-border.expanded .armor-stats,
-div.l5r4.pc.alternative section.equipment-list div.weapons .item-border.expanded .technique-stats,
-div.l5r4.pc.alternative section.equipment-list div.weapons .item-border.expanded .spell-stats,
-div.l5r4.pc.alternative section.equipment-list div.weapons .item-border.expanded .weapon-stats,
-div.l5r4.pc.alternative section.equipment-list div.weapons .item-border.expanded .armor-stats {
-  max-height: unset;
-}
 div.l5r4.pc.alternative section.techniques-list.spells-list div.techniques .item-border .technique-stats,
 div.l5r4.pc.alternative section.techniques-list.spells-list div.techniques .item-border .spell-stats,
 div.l5r4.pc.alternative section.techniques-list.spells-list div.techniques .item-border .weapon-stats,
@@ -136,8 +110,34 @@ div.l5r4.pc.alternative section.equipment-list div.weapons .item-border .spell-s
 div.l5r4.pc.alternative section.equipment-list div.weapons .item-border .weapon-stats,
 div.l5r4.pc.alternative section.equipment-list div.weapons .item-border .armor-stats {
   max-height: 1px;
-  transition: 0.2s;
+  transition: 0.4s;
   overflow: hidden;
+}
+div.l5r4.pc.alternative section.techniques-list.spells-list div.techniques .item-border.expanded .technique-stats,
+div.l5r4.pc.alternative section.techniques-list.spells-list div.techniques .item-border.expanded .spell-stats,
+div.l5r4.pc.alternative section.techniques-list.spells-list div.techniques .item-border.expanded .weapon-stats,
+div.l5r4.pc.alternative section.techniques-list.spells-list div.techniques .item-border.expanded .armor-stats,
+div.l5r4.pc.alternative section.techniques-list.spells-list div.spells .item-border.expanded .technique-stats,
+div.l5r4.pc.alternative section.techniques-list.spells-list div.spells .item-border.expanded .spell-stats,
+div.l5r4.pc.alternative section.techniques-list.spells-list div.spells .item-border.expanded .weapon-stats,
+div.l5r4.pc.alternative section.techniques-list.spells-list div.spells .item-border.expanded .armor-stats,
+div.l5r4.pc.alternative section.techniques-list.spells-list div.weapons .item-border.expanded .technique-stats,
+div.l5r4.pc.alternative section.techniques-list.spells-list div.weapons .item-border.expanded .spell-stats,
+div.l5r4.pc.alternative section.techniques-list.spells-list div.weapons .item-border.expanded .weapon-stats,
+div.l5r4.pc.alternative section.techniques-list.spells-list div.weapons .item-border.expanded .armor-stats,
+div.l5r4.pc.alternative section.equipment-list div.techniques .item-border.expanded .technique-stats,
+div.l5r4.pc.alternative section.equipment-list div.techniques .item-border.expanded .spell-stats,
+div.l5r4.pc.alternative section.equipment-list div.techniques .item-border.expanded .weapon-stats,
+div.l5r4.pc.alternative section.equipment-list div.techniques .item-border.expanded .armor-stats,
+div.l5r4.pc.alternative section.equipment-list div.spells .item-border.expanded .technique-stats,
+div.l5r4.pc.alternative section.equipment-list div.spells .item-border.expanded .spell-stats,
+div.l5r4.pc.alternative section.equipment-list div.spells .item-border.expanded .weapon-stats,
+div.l5r4.pc.alternative section.equipment-list div.spells .item-border.expanded .armor-stats,
+div.l5r4.pc.alternative section.equipment-list div.weapons .item-border.expanded .technique-stats,
+div.l5r4.pc.alternative section.equipment-list div.weapons .item-border.expanded .spell-stats,
+div.l5r4.pc.alternative section.equipment-list div.weapons .item-border.expanded .weapon-stats,
+div.l5r4.pc.alternative section.equipment-list div.weapons .item-border.expanded .armor-stats {
+  max-height: 800px;
 }
 div.l5r4.pc.alternative section.techniques-list.spells-list div.techniques .item-border .details,
 div.l5r4.pc.alternative section.techniques-list.spells-list div.spells .item-border .details,
@@ -166,8 +166,12 @@ div.l5r4.pc.alternative .item {
 }
 div.l5r4.pc.alternative div.sidebar {
   margin-left: 20px;
-  box-shadow: -30px 0px 60px;
+  box-shadow: -30px 0px 60px rgba(0, 0, 0, 0.438);
   background: url(/systems/l5r4/assets/textures/scroll2.webp);
+  background-size: auto 100%;
+  height: -webkit-fit-content;
+  height: -moz-fit-content;
+  height: fit-content;
 }
 div.l5r4.pc.alternative .pc-info {
   margin-left: -30px;
