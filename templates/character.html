@@ -1,5 +1,14 @@
 <form class="{{cssClass}}" autocomplete="off">
     <div class="main-sheet">
+        <div class="notes-toggle">
+            <img src="/modules/alternative-L5R4e-sheet/assets/notes.webp">
+            <div class="notes">
+                <h2>{{localize "l5r4.sheet.notes"}}</h2>
+
+                {{editor content=data.notes target="data.notes" button=true owner=owner editable=true}}
+            </div>
+        </div>
+
         <div class="main-stats">
             {{> "modules/alternative-L5R4e-sheet/templates/partials/pc-stats.hbs"}}
         </div>

@@ -220,4 +220,35 @@ div.l5r4.pc.alternative .ring-roll img {
 }
 div.l5r4.pc.alternative .ring-roll img:hover {
   filter: brightness(1) drop-shadow(0px 5px 6px #272626);
+}
+div.l5r4.pc.alternative .notes-toggle {
+  position: absolute;
+  top: 40px;
+  right: -10px;
+}
+div.l5r4.pc.alternative .notes-toggle img {
+  width: 3em;
+  height: 3em;
+  border: none;
+  transform: rotate(-30deg);
+}
+div.l5r4.pc.alternative .notes-toggle .notes {
+  transition: width 0s, height 0.3s;
+  position: absolute;
+  padding: 0;
+  left: 30px;
+  top: -30%;
+  width: 0px;
+  height: 0px;
+  background: url(/systems/l5r4/assets/textures/watercolor.webp);
+  background-size: cover;
+  z-index: -1;
+  overflow: hidden;
+}
+div.l5r4.pc.alternative .notes-toggle:hover .notes {
+  padding-top: 10px;
+  padding-left: 20px;
+  width: 300px;
+  height: 450px;
+  overflow: scroll;
 }/*# sourceMappingURL=module.css.map */
