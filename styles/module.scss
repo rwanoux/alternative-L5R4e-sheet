@@ -1,6 +1,6 @@
 @font-face {
     font-family: "brush";
-    src: url(../font/BTCTRIAL.ttf);
+    src: url(../font/Makise.ttf);
 }
 div.l5r4.pc.alternative {
     h1,
@@ -19,6 +19,23 @@ div.l5r4.pc.alternative {
             rgba(255, 245, 229, 0.0844712885154062) 0%,
             rgba(196, 191, 34, 0.4206057422969187) 100%
         );
+    }
+    h1 {
+        font-size: 2.5em;
+    }
+    h2 {
+        font-size: 2em;
+    }
+    .skills,
+    .traits-rings,
+    .equipment,
+    .spells.techniques {
+        padding: 16px;
+        box-shadow: 0px 0px 20px black;
+        margin-bottom: 20px;
+        .spells-list {
+            flex-direction: column;
+        }
     }
     div.main-stats {
         flex: 0 0 67%;
@@ -90,6 +107,31 @@ div.l5r4.pc.alternative {
                     padding: 3px;
                     box-shadow: 0px 0px 30px rgba(128, 128, 128, 0.205) inset;
                 }
+                .item {
+                    .weapon-name,
+                    .armor-name,
+                    .technique-name,
+                    .spell-name {
+                        display: flex;
+                        flex-direction: row;
+                        justify-content: space-between;
+                        img {
+                            max-height: 2em;
+                            border: none;
+                            margin: 0% 15%;
+                            width: 2em;
+                            height: 2em;
+                        }
+                        .buttons {
+                            a {
+                                width: 24px;
+                                height: 1em;
+                                display: inline-flex;
+                                vertical-align: middle;
+                            }
+                        }
+                    }
+                }
             }
         }
     }
@@ -142,7 +184,6 @@ div.l5r4.pc.alternative {
         input {
             font-family: "brush";
             font-size: 2em;
-            height: 2.1em;
             text-shadow: 0px 0px 8px white;
         }
         h3 {
@@ -154,10 +195,17 @@ div.l5r4.pc.alternative {
     }
     .ring-roll img {
         filter: brightness(0.8) drop-shadow(0px 0px 3px gray);
-        transition: 0.3s;
+        transform: scale(1);
+        transition: 0.15s ease-out;
+        content: "";
+        width: 85px;
+        height: 85px;
 
         &:hover {
             filter: brightness(1) drop-shadow(0px 5px 6px rgb(39, 38, 38));
+        }
+        &:active {
+            transform: scale(0.8);
         }
     }
     .notes-toggle {

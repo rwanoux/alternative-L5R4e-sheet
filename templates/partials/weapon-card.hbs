@@ -6,13 +6,16 @@
       <img src="{{img}}">
       <h4 title="{{localize " l5r4.sheet.edit"}}">
         <a class="item-edit">{{name}}</a>
+      </h4>
+      <div class="buttons">
         <a class="expand">
           <i class="fas fa-arrow-down" title="expand details"></i>
         </a>
-      </h4>
-      <a class="weapon-roll">
-        <img title="{{localize " l5r4.mech.damageRoll"}}" src="icons/dice/d10black.svg" />
-      </a>
+        <a class="weapon-roll">
+          <img title="{{localize " l5r4.mech.damageRoll"}}" src="icons/dice/d10black.svg" />
+        </a>
+      </div>
+
       {{/if}}
       {{#unless inSheet}}
       <h4 title="{{localize " l5r4.sheet.edit"}}">

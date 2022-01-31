@@ -2,16 +2,21 @@
   <div class="technique-card item " data-item-id="{{_id}}">
 
     <div class="technique-info technique-name">
+      {{#if inSheet}}
       <h4>
-        {{#if inSheet}}
+
         <a title="{{localize " l5r4.sheet.edit"}}" class="item-edit">{{name}}</a>
+
+
+      </h4>
+      <div class="button">
         <a class="expand">
           <i class="fas fa-arrow-down" title="expand details"></i>
         </a>
-        {{else}}
-        {{name}}
-        {{/if}}
-      </h4>
+      </div>
+      {{else}}
+      {{name}}
+      {{/if}}
     </div>
     <div class="technique-info technique-stats">
       <div class="flexrow">

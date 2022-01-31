@@ -45,6 +45,15 @@ export default class altSheetL5R4 extends ActorSL5R4PcSheetheet5e {
         super.activateListeners(html);
 
     }
+    async _onItemCreate(event) {
+        event.preventDefault();
+        let element = event.currentTarget;
+        let itemData = {
+            name: game.i18n.localize("l5r4.sheet.new"),
+            type: element.dataset.type
+        }
+        return this.actor.createEmbeddedDocuments("Item", [itemData]);
+    }
 
     toggleExpand(ev) {
         let row = ev.currentTarget.closest(".item-border");
