@@ -1,24 +1,36 @@
 <section class="stats">
   <label class="pc-info">
-    <div>
-      <h3 class="title">{{localize "l5r4.traits.name"}}</h3>
-      <input type="text" name="name" value="{{actor.name}}" placeholder="Name" />
-      <h3 class="title">{{localize "l5r4.ranks.insightRank"}}</h3>
-      <input type="number" name="data.insight.rank" value="{{data.insight.rank}}" data-type="Number" />
+    <div class="info-row">
+      <div class="char-name">
+        <h3 class="title">{{localize "l5r4.traits.name"}}</h3>
+        <input type="text" name="name" value="{{actor.name}}" placeholder="Name" />
+      </div>
+      <div>
+        <h3 class="title">{{localize "l5r4.traits.clan"}}</h3>
+        <input name="data.clan" type="text" value="{{data.clan}}" />
+      </div>
+      <div>
+        <h3 class="title">{{localize "l5r4.traits.school"}}</h3>
+        <input type="text" name="data.school" value="{{data.school}}" data-type="String" />
+      </div>
     </div>
-    <div>
-      <h3 class="title">{{localize "l5r4.traits.clan"}}</h3>
-      <input name="data.clan" type="text" value="{{data.clan}}" />
-      <h3 class="title">{{localize "l5r4.traits.xp"}}</h3>
-      <input type="number" name="data.xp" value="{{data.xp}}" data-type="Number" />
-    </div>
-    <div>
-      <h3 class="title">{{localize "l5r4.traits.school"}}</h3>
-      <input type="text" name="data.school" value="{{data.school}}" data-type="String" />
-      <h3 class="title">{{localize "l5r4.traits.insight"}}</h3>
-      <input type="number" name="data.insight.points" value="{{data.insight.points}}" data-type="Number" />
+
+    <div class="info-row hidden">
+      <div>
+        <h3 class="title">{{localize "l5r4.ranks.insightRank"}}</h3>
+        <input type="number" name="data.insight.rank" value="{{data.insight.rank}}" data-type="Number" />
+      </div>
+      <div>
+        <h3 class="title">{{localize "l5r4.traits.xp"}}</h3>
+        <input type="number" name="data.xp" value="{{data.xp}}" data-type="Number" />
+      </div>
+      <div>
+        <h3 class="title">{{localize "l5r4.traits.insight"}}</h3>
+        <input type="number" name="data.insight.points" value="{{data.insight.points}}" data-type="Number" />
+      </div>
     </div>
   </label>
+
   <label class="traits-rings">
     <div class="sheet-col">
       <a class="ring-roll" data-ring-rank="{{data.rings.air}}" data-ring-name="{{localize " l5r4.rings.air"}}">

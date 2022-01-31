@@ -20,6 +20,9 @@ div.l5r4.pc.alternative {
             rgba(196, 191, 34, 0.4206057422969187) 100%
         );
     }
+    div.main-stats {
+        flex: 0 0 67%;
+    }
     .main-stats > *,
     .sidebar > * {
         padding: 8px;
@@ -112,20 +115,49 @@ div.l5r4.pc.alternative {
         height: fit-content;
     }
     .pc-info {
-        margin-left: -30px;
-        box-shadow: 0px 20px 60px;
-        margin-bottom: 20px;
-        padding: 0px 50px;
-        width: 115%;
+        flex-direction: column;
+        background: url(/systems/l5r4/assets/textures/scroll2.webp);
+        background-size: 100% auto;
+
+        .info-row {
+            box-shadow: 0px 20px 60px;
+            margin-bottom: 20px;
+            padding: 0px 50px;
+            width: 108%;
+            height: 65px;
+            display: flex;
+            flex-direction: row;
+            overflow: hidden;
+            transition: 0.3s;
+            .char-name {
+                flex: 0 0 50%;
+            }
+            &.hidden {
+                max-height: 1px;
+            }
+        }
+        &:hover .hidden {
+            max-height: 80px;
+        }
         input {
             font-family: "brush";
             font-size: 2em;
             height: 2.1em;
+            text-shadow: 0px 0px 8px white;
         }
         h3 {
             position: relative;
-            top: 10px;
+            /* top: 10px; */
+            left: -15px;
             transform: rotate(-5deg);
+        }
+    }
+    .ring-roll img {
+        filter: brightness(0.8) drop-shadow(0px 0px 3px gray);
+        transition: 0.3s;
+
+        &:hover {
+            filter: brightness(1) drop-shadow(0px 5px 6px rgb(39, 38, 38));
         }
     }
 }

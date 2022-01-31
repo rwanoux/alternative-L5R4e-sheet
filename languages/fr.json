@@ -1,0 +1,186 @@
+{
+    "l5r4": {
+        "chat": {
+            "traitRoll": "Jet de Trait {trait}",
+            "ringRoll": "jet d'aneau {anneau}",
+            "skillRoll": "Jet de compétence {compétence}",
+            "damageRoll": "Jet de dégât {armes}"
+        },
+        "errors": {
+            "scoolRankZero": "Vous ne pouvez pas lancer un sort avec un rang d'école réduit à zéro."
+        },
+        "mech": {
+            "roll": "Jet",
+            "cancel": "Annuler",
+            "ok": "Ok",
+            "keep": "Gardez",
+            "raise": "Soulevez",
+            "init": "Initiative",
+            "bonus": "Bonus",
+            "mod": "Modificateur",
+            "rate": "Taux",
+            "current": "Actuel",
+            "total": "Total",
+            "ringRoll": "Jet d'anneau",
+            "traitRoll": "Jet de traits",
+            "skillRoll": "Jet de compétences",
+            "damageRoll": "Rôle des dommages",
+            "attackRoll": "Jet d'attaque",
+            "spellCasting": "Jet de sort",
+            "unskilledRoll": "Jet non qualifié",
+            "emphasis": "Accent mis sur",
+            "toChat": "envoyer dans le chat",
+            "effect": "Effet",
+            "simple": "Simple",
+            "complex": "Complexe",
+            "free": "Gratuit",
+            "attack": "Attaque",
+            "action": "Action"
+        },
+        "attack": {
+            "melee": "Mêlée",
+            "ranged": "A distance"
+        },
+        "weapon": {
+            "attackType": "Type d'attaque",
+            "size": "Taille",
+            "damageRoll": "Jet de dommages",
+            "damageKeep": "Maintien des dommages",
+            "str": "Force",
+            "range": "Portée",
+            "arrow": "Flèche",
+            "typeWeapon": "Armes",
+            "typeBow": "Arc",
+            "damage": "Dégâts"
+        },
+        "armor": {
+            "name": "Armure",
+            "bonus": "Bonus",
+            "reduction": "Réduction",
+            "equiped": "Equipé"
+        },
+        "spell": {
+            "ring": "Anneau",
+            "mastery": "Maîtrise",
+            "range": "Portée",
+            "aoe": "Zone d'effet",
+            "duration": "Durée",
+            "raises": "Soulevez",
+            "affinity": "Affinité",
+            "deficiency": "Déficit"
+        },
+        "rings": {
+            "Ring": "Anneau",
+            "fire": "Feu",
+            "water": "Eau",
+            "air": "Air",
+            "earth": "Terre",
+            "void": "Vide",
+            "voidPoints": "Points de vide"
+        },
+        "skill": {
+            "rank": "Rang",
+            "type": "Type",
+            "trait": "Trait",
+            "emphasis": "Accent",
+            "school": "scolaires"
+        },
+        "traits": {
+            "name": "Nom",
+            "clan": "Clan",
+            "school": "École",
+            "rank": "Rang",
+            "xp": "Points d'expérience",
+            "insight": "Aperçu",
+            "sta": "Endurance",
+            "wil": "Volonté",
+            "str": "Force",
+            "per": "Perception",
+            "ref": "Réflexes",
+            "awa": "Sensibilisation",
+            "agi": "Agilité",
+            "int": "Intelligence",
+            "wounds": "Blessures",
+            "armorTn": "Armor TN",
+            "armorTnBase": "Armure TN Base",
+            "woundLevel": "Niveau des blessures",
+            "woundsSuffered": "Blessures subies",
+            "penalty": "Pénalité",
+            "total": "Total",
+            "current": "Actuel",
+            "woundHealRate": "Taux de guérison de la blessure",
+            "healthy": "Santé",
+            "nicked": "Entaillé ",
+            "grazed": "Brûlé",
+            "hurt": "Hurt",
+            "injured": "Blessé",
+            "crippled": "Handicapés",
+            "down": "Au sol",
+            "out": "Out"
+        },
+        "sheet": {
+            "skills": "Compétences",
+            "addSkill": "Ajouter une compétence",
+            "skillName": "compétence",
+            "edit": "Modifier",
+            "delete": "Supprimer",
+            "weapons": "Armes",
+            "addWeapon": "Ajouter une arme",
+            "addEquipment": "Ajouter un équipement",
+            "new": "Nouveau",
+            "notes": "Notes",
+            "spell": "Sort",
+            "spells": "Sorts",
+            "armors": "Armures",
+            "addArmor": "Ajouter une armure",
+            "effect": "Effet",
+            "technique": "Technique",
+            "techniques": "Techniques",
+            "addTechSpell": "Ajouter une technique\/un sort",
+            "shugenja": "Shugenja",
+            "equipment": "Équipement",
+            "rulesSummary": "Résumé des règles",
+            "description": "Description",
+            "nrWoundLvls": "Nombre de niveaux de Blessure"
+        },
+        "skillTypes": {
+            "high": "Haut",
+            "bugei": "Bugei",
+            "merch": "Marchand",
+            "low": "Faible"
+        },
+        "ranks": {
+            "honorRank": "Rang d'honneur",
+            "honorPoints": "Points d'honneur",
+            "gloryRank": "Rang de gloire",
+            "gloryPoints": "Points de gloire",
+            "statusRank": "Statut Rang",
+            "statusPoints": "Points de statut",
+            "shadowRank": "rang de Souillure",
+            "shadowPoints": "Points d'ombre",
+            "insightRank": "Classement Insight",
+            "insightPoints": "Points de vue"
+        },
+        "arrows": {
+            "armor": "Perçage d'armure",
+            "flesh": "Coupeur de chair",
+            "humming": "Ampoule à bourdonnement",
+            "rope": "Coupe-cordes",
+            "willow": "Feuille de saule"
+        }
+    },
+    "SETTINGS": {
+        "showTraitRollOptions": {
+            "name": "Demande d'options pour les jets de traits par défaut.",
+            "label": "Maintenez la touche Shift pour basculer."
+        },
+        "showSpellRollOptions": {
+            "name": "Demande si le roulement d'anneau est un sort par défaut.",
+            "label": "Maintenez la touche Shift pour basculer."
+        },
+        "showSkillRollOptions": {
+            "name": "Demande les options de jet de compétences et de jet de dégâts par défaut.",
+            "label": "Maintenez la touche Shift pour basculer."
+        }
+    }
+}

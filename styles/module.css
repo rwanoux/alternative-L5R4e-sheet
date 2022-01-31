@@ -15,6 +15,9 @@ div.l5r4.pc.alternative h2 {
   vertical-align: middle;
   background: linear-gradient(45deg, rgba(255, 245, 229, 0.0844712885) 0%, rgba(196, 191, 34, 0.4206057423) 100%);
 }
+div.l5r4.pc.alternative div.main-stats {
+  flex: 0 0 67%;
+}
 div.l5r4.pc.alternative .main-stats > *,
 div.l5r4.pc.alternative .sidebar > * {
   padding: 8px;
@@ -175,19 +178,46 @@ div.l5r4.pc.alternative div.sidebar {
   height: fit-content;
 }
 div.l5r4.pc.alternative .pc-info {
-  margin-left: -30px;
+  flex-direction: column;
+  background: url(/systems/l5r4/assets/textures/scroll2.webp);
+  background-size: 100% auto;
+}
+div.l5r4.pc.alternative .pc-info .info-row {
   box-shadow: 0px 20px 60px;
   margin-bottom: 20px;
   padding: 0px 50px;
-  width: 115%;
+  width: 108%;
+  height: 65px;
+  display: flex;
+  flex-direction: row;
+  overflow: hidden;
+  transition: 0.3s;
+}
+div.l5r4.pc.alternative .pc-info .info-row .char-name {
+  flex: 0 0 50%;
+}
+div.l5r4.pc.alternative .pc-info .info-row.hidden {
+  max-height: 1px;
+}
+div.l5r4.pc.alternative .pc-info:hover .hidden {
+  max-height: 80px;
 }
 div.l5r4.pc.alternative .pc-info input {
   font-family: "brush";
   font-size: 2em;
   height: 2.1em;
+  text-shadow: 0px 0px 8px white;
 }
 div.l5r4.pc.alternative .pc-info h3 {
   position: relative;
-  top: 10px;
+  /* top: 10px; */
+  left: -15px;
   transform: rotate(-5deg);
+}
+div.l5r4.pc.alternative .ring-roll img {
+  filter: brightness(0.8) drop-shadow(0px 0px 3px gray);
+  transition: 0.3s;
+}
+div.l5r4.pc.alternative .ring-roll img:hover {
+  filter: brightness(1) drop-shadow(0px 5px 6px #272626);
 }/*# sourceMappingURL=module.css.map */
