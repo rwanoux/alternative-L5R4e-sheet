@@ -3,9 +3,16 @@
   <section class="equipment-list">
     <section class="weapons-list">
       <h2>
-        <div>{{localize "l5r4.sheet.equipment"}}</div>
-
+        {{localize "l5r4.sheet.equipment"}}
       </h2>
+      <h3 class="wealth flexrow">
+        <div class="wealth wealth-koku">{{localize "l5r4.wealth.koku"}}: <input type="text" name="data.wealth.koku"
+            value="{{data.wealth.koku}}" placeholder="{{localize " l5r4.wealth.koku"}}" /></div>
+        <div class="wealth wealth-koku">{{localize "l5r4.wealth.bu"}}: <input type="text" name="data.wealth.bu"
+            value="{{data.wealth.bu}}" placeholder="{{localize " l5r4.wealth.bu"}}" /></div>
+        <div class="wealth wealth-koku">{{localize "l5r4.wealth.zeni"}}: <input type="text" name="data.wealth.zeni"
+            value="{{data.wealth.zeni}}" placeholder="{{localize " l5r4.wealth.zeni"}}" /></div>
+      </h3>
       <div class="weapons flexrow">
         <h3>{{localize "l5r4.weapon.typeWeapon"}}
           <a class="item-create" data-type="weapon">

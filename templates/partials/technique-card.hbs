@@ -9,16 +9,6 @@
 
 
       </h4>
-      <div class="button">
-        <a class="expand">
-          <i class="fas fa-arrow-down" title="expand details"></i>
-        </a>
-      </div>
-      {{else}}
-      {{name}}
-      {{/if}}
-    </div>
-    <div class="technique-info technique-stats">
       <div class="flexrow">
         {{#unless data.shugenja}}
         <div class="technique-rank">
@@ -39,11 +29,25 @@
         </div>
         {{/unless}}
       </div>
-      <div class="flexrow">
+      <div class="button">
+        <a class="expand">
+          <i class="fas fa-arrow-down" title="expand details"></i>
+        </a>
+      </div>
+      {{else}}
+      {{name}}
+      {{/if}}
+
+    </div>
+    <div class="technique-info technique-stats">
+
+      <div class="flexcol">
         <div class="details">
+          <h3>regles</h3>
           {{{data.specialRules}}}
         </div>
         <div class="details">
+          <h3>description</h3>
           {{{data.description}}}
         </div>
       </div>

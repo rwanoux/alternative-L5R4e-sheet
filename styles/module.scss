@@ -2,7 +2,8 @@
     font-family: "brush";
     src: url(../font/Makise.ttf);
 }
-div.l5r4.pc.alternative {
+
+div.l5r4.pc.alternative .window-content form {
     h1,
     h2 {
         width: 100%;
@@ -14,11 +15,7 @@ div.l5r4.pc.alternative {
         text-align: center;
         padding-left: 20%;
         vertical-align: middle;
-        background: linear-gradient(
-            45deg,
-            rgba(255, 245, 229, 0.0844712885154062) 0%,
-            rgba(196, 191, 34, 0.4206057422969187) 100%
-        );
+        background: linear-gradient( 45deg, rgba(255, 245, 229, 0.0844712885154062) 0%, rgba(196, 191, 34, 0.4206057422969187) 100%);
     }
     h1 {
         font-size: 2.5em;
@@ -36,12 +33,17 @@ div.l5r4.pc.alternative {
         .spells-list {
             flex-direction: column;
         }
+        ;
+        .ring-rank {
+            width: 50px;
+            height: 50px
+        }
     }
     div.main-stats {
         flex: 0 0 67%;
     }
-    .main-stats > *,
-    .sidebar > * {
+    .main-stats>*,
+    .sidebar>* {
         padding: 8px;
     }
     .skill-item:nth-child(odd) {
@@ -65,13 +67,11 @@ div.l5r4.pc.alternative {
             }
             display: flex;
             flex-direction: column;
-
             h4 {
                 display: flex;
                 flex-direction: row;
                 justify-content: space-around;
                 padding-left: 15px;
-
                 img {
                     max-height: 2em;
                     border: none;
@@ -80,7 +80,6 @@ div.l5r4.pc.alternative {
             }
             .item-border {
                 transition: 0.3s;
-
                 &:hover {
                     background-color: rgba(100, 90, 34, 0.1);
                 }
@@ -91,6 +90,10 @@ div.l5r4.pc.alternative {
                     max-height: 1px;
                     transition: 0.4s;
                     overflow: hidden;
+                    max-height: 0px;
+                    overflow: scroll;
+                    justify-content: space-between;
+                    display: flex;
                 }
                 &.expanded {
                     .technique-stats,
@@ -99,15 +102,19 @@ div.l5r4.pc.alternative {
                     .armor-stats {
                         max-height: 400px;
                         overflow: scroll;
+                        &:first-child {
+                            max-width: 20%
+                        }
                     }
                 }
-
                 .details {
                     margin: 5px;
                     padding: 3px;
                     box-shadow: 0px 0px 30px rgba(128, 128, 128, 0.205) inset;
                 }
                 .item {
+                    flex-direction: column;
+                    display: flex;
                     .weapon-name,
                     .armor-name,
                     .technique-name,
@@ -137,7 +144,7 @@ div.l5r4.pc.alternative {
     }
     .equipment-list,
     .weapons-list {
-        display: unset;
+        display: flex;
         img {
             max-height: 2em;
             border: none;
@@ -160,7 +167,6 @@ div.l5r4.pc.alternative {
         flex-direction: column;
         background: url(/systems/l5r4/assets/textures/scroll2.webp);
         background-size: 100% auto;
-
         .info-row {
             box-shadow: 0px 20px 60px;
             margin-bottom: 20px;
@@ -194,15 +200,12 @@ div.l5r4.pc.alternative {
         }
     }
     .ring-roll img {
-        filter: brightness(0.8) drop-shadow(0px 0px 3px gray);
+        filter: brightness(0.8) grayscale(0.8) drop-shadow(0px 0px 3px gray) hue-rotate( 20deg);
         transform: scale(1);
         transition: 0.15s ease-out;
         content: "";
-        width: 85px;
-        height: 85px;
-
         &:hover {
-            filter: brightness(1) drop-shadow(0px 5px 6px rgb(39, 38, 38));
+            filter: brightness(1) grayscale(0) drop-shadow(0px 5px 6px rgb(39, 38, 38)) hue-rotate( 0deg);
         }
         &:active {
             transform: scale(0.8);

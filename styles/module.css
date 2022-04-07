@@ -2,8 +2,8 @@
   font-family: "brush";
   src: url(../font/Makise.ttf);
 }
-div.l5r4.pc.alternative h1,
-div.l5r4.pc.alternative h2 {
+div.l5r4.pc.alternative .window-content form h1,
+div.l5r4.pc.alternative .window-content form h2 {
   width: 100%;
   margin-top: 8px;
   border-top: 1px solid gray;
@@ -15,281 +15,325 @@ div.l5r4.pc.alternative h2 {
   vertical-align: middle;
   background: linear-gradient(45deg, rgba(255, 245, 229, 0.0844712885) 0%, rgba(196, 191, 34, 0.4206057423) 100%);
 }
-div.l5r4.pc.alternative h1 {
+div.l5r4.pc.alternative .window-content form h1 {
   font-size: 2.5em;
 }
-div.l5r4.pc.alternative h2 {
+div.l5r4.pc.alternative .window-content form h2 {
   font-size: 2em;
 }
-div.l5r4.pc.alternative .skills,
-div.l5r4.pc.alternative .traits-rings,
-div.l5r4.pc.alternative .equipment,
-div.l5r4.pc.alternative .spells.techniques {
+div.l5r4.pc.alternative .window-content form .skills,
+div.l5r4.pc.alternative .window-content form .traits-rings,
+div.l5r4.pc.alternative .window-content form .equipment,
+div.l5r4.pc.alternative .window-content form .spells.techniques {
   padding: 16px;
   box-shadow: 0px 0px 20px black;
   margin-bottom: 20px;
 }
-div.l5r4.pc.alternative .skills .spells-list,
-div.l5r4.pc.alternative .traits-rings .spells-list,
-div.l5r4.pc.alternative .equipment .spells-list,
-div.l5r4.pc.alternative .spells.techniques .spells-list {
+div.l5r4.pc.alternative .window-content form .skills .spells-list,
+div.l5r4.pc.alternative .window-content form .traits-rings .spells-list,
+div.l5r4.pc.alternative .window-content form .equipment .spells-list,
+div.l5r4.pc.alternative .window-content form .spells.techniques .spells-list {
   flex-direction: column;
 }
-div.l5r4.pc.alternative div.main-stats {
+div.l5r4.pc.alternative .window-content form .skills .ring-rank,
+div.l5r4.pc.alternative .window-content form .traits-rings .ring-rank,
+div.l5r4.pc.alternative .window-content form .equipment .ring-rank,
+div.l5r4.pc.alternative .window-content form .spells.techniques .ring-rank {
+  width: 50px;
+  height: 50px;
+}
+div.l5r4.pc.alternative .window-content form div.main-stats {
   flex: 0 0 67%;
 }
-div.l5r4.pc.alternative .main-stats > *,
-div.l5r4.pc.alternative .sidebar > * {
+div.l5r4.pc.alternative .window-content form .main-stats > *,
+div.l5r4.pc.alternative .window-content form .sidebar > * {
   padding: 8px;
 }
-div.l5r4.pc.alternative .skill-item:nth-child(odd) {
+div.l5r4.pc.alternative .window-content form .skill-item:nth-child(odd) {
   background-color: rgba(221, 224, 14, 0.349);
 }
-div.l5r4.pc.alternative .skill-item:nth-child(even) {
+div.l5r4.pc.alternative .window-content form .skill-item:nth-child(even) {
   background-color: rgba(163, 163, 162, 0.507);
 }
-div.l5r4.pc.alternative section.techniques-list.spells-list h3,
-div.l5r4.pc.alternative section.equipment-list h3 {
+div.l5r4.pc.alternative .window-content form section.techniques-list.spells-list h3,
+div.l5r4.pc.alternative .window-content form section.equipment-list h3 {
   text-align: center;
   background-color: rgba(87, 81, 48, 0.205);
   text-transform: uppercase;
 }
-div.l5r4.pc.alternative section.techniques-list.spells-list div.techniques,
-div.l5r4.pc.alternative section.techniques-list.spells-list div.spells,
-div.l5r4.pc.alternative section.techniques-list.spells-list div.weapons,
-div.l5r4.pc.alternative section.equipment-list div.techniques,
-div.l5r4.pc.alternative section.equipment-list div.spells,
-div.l5r4.pc.alternative section.equipment-list div.weapons {
+div.l5r4.pc.alternative .window-content form section.techniques-list.spells-list div.techniques,
+div.l5r4.pc.alternative .window-content form section.techniques-list.spells-list div.spells,
+div.l5r4.pc.alternative .window-content form section.techniques-list.spells-list div.weapons,
+div.l5r4.pc.alternative .window-content form section.equipment-list div.techniques,
+div.l5r4.pc.alternative .window-content form section.equipment-list div.spells,
+div.l5r4.pc.alternative .window-content form section.equipment-list div.weapons {
   display: flex;
   flex-direction: column;
 }
-div.l5r4.pc.alternative section.techniques-list.spells-list div.techniques:nth-child(odd),
-div.l5r4.pc.alternative section.techniques-list.spells-list div.spells:nth-child(odd),
-div.l5r4.pc.alternative section.techniques-list.spells-list div.weapons:nth-child(odd),
-div.l5r4.pc.alternative section.equipment-list div.techniques:nth-child(odd),
-div.l5r4.pc.alternative section.equipment-list div.spells:nth-child(odd),
-div.l5r4.pc.alternative section.equipment-list div.weapons:nth-child(odd) {
+div.l5r4.pc.alternative .window-content form section.techniques-list.spells-list div.techniques:nth-child(odd),
+div.l5r4.pc.alternative .window-content form section.techniques-list.spells-list div.spells:nth-child(odd),
+div.l5r4.pc.alternative .window-content form section.techniques-list.spells-list div.weapons:nth-child(odd),
+div.l5r4.pc.alternative .window-content form section.equipment-list div.techniques:nth-child(odd),
+div.l5r4.pc.alternative .window-content form section.equipment-list div.spells:nth-child(odd),
+div.l5r4.pc.alternative .window-content form section.equipment-list div.weapons:nth-child(odd) {
   background-color: rgba(155, 150, 145, 0.239);
 }
-div.l5r4.pc.alternative section.techniques-list.spells-list div.techniques h4,
-div.l5r4.pc.alternative section.techniques-list.spells-list div.spells h4,
-div.l5r4.pc.alternative section.techniques-list.spells-list div.weapons h4,
-div.l5r4.pc.alternative section.equipment-list div.techniques h4,
-div.l5r4.pc.alternative section.equipment-list div.spells h4,
-div.l5r4.pc.alternative section.equipment-list div.weapons h4 {
+div.l5r4.pc.alternative .window-content form section.techniques-list.spells-list div.techniques h4,
+div.l5r4.pc.alternative .window-content form section.techniques-list.spells-list div.spells h4,
+div.l5r4.pc.alternative .window-content form section.techniques-list.spells-list div.weapons h4,
+div.l5r4.pc.alternative .window-content form section.equipment-list div.techniques h4,
+div.l5r4.pc.alternative .window-content form section.equipment-list div.spells h4,
+div.l5r4.pc.alternative .window-content form section.equipment-list div.weapons h4 {
   display: flex;
   flex-direction: row;
   justify-content: space-around;
   padding-left: 15px;
 }
-div.l5r4.pc.alternative section.techniques-list.spells-list div.techniques h4 img,
-div.l5r4.pc.alternative section.techniques-list.spells-list div.spells h4 img,
-div.l5r4.pc.alternative section.techniques-list.spells-list div.weapons h4 img,
-div.l5r4.pc.alternative section.equipment-list div.techniques h4 img,
-div.l5r4.pc.alternative section.equipment-list div.spells h4 img,
-div.l5r4.pc.alternative section.equipment-list div.weapons h4 img {
+div.l5r4.pc.alternative .window-content form section.techniques-list.spells-list div.techniques h4 img,
+div.l5r4.pc.alternative .window-content form section.techniques-list.spells-list div.spells h4 img,
+div.l5r4.pc.alternative .window-content form section.techniques-list.spells-list div.weapons h4 img,
+div.l5r4.pc.alternative .window-content form section.equipment-list div.techniques h4 img,
+div.l5r4.pc.alternative .window-content form section.equipment-list div.spells h4 img,
+div.l5r4.pc.alternative .window-content form section.equipment-list div.weapons h4 img {
   max-height: 2em;
   border: none;
   margin-right: 15%;
 }
-div.l5r4.pc.alternative section.techniques-list.spells-list div.techniques .item-border,
-div.l5r4.pc.alternative section.techniques-list.spells-list div.spells .item-border,
-div.l5r4.pc.alternative section.techniques-list.spells-list div.weapons .item-border,
-div.l5r4.pc.alternative section.equipment-list div.techniques .item-border,
-div.l5r4.pc.alternative section.equipment-list div.spells .item-border,
-div.l5r4.pc.alternative section.equipment-list div.weapons .item-border {
+div.l5r4.pc.alternative .window-content form section.techniques-list.spells-list div.techniques .item-border,
+div.l5r4.pc.alternative .window-content form section.techniques-list.spells-list div.spells .item-border,
+div.l5r4.pc.alternative .window-content form section.techniques-list.spells-list div.weapons .item-border,
+div.l5r4.pc.alternative .window-content form section.equipment-list div.techniques .item-border,
+div.l5r4.pc.alternative .window-content form section.equipment-list div.spells .item-border,
+div.l5r4.pc.alternative .window-content form section.equipment-list div.weapons .item-border {
   transition: 0.3s;
 }
-div.l5r4.pc.alternative section.techniques-list.spells-list div.techniques .item-border:hover,
-div.l5r4.pc.alternative section.techniques-list.spells-list div.spells .item-border:hover,
-div.l5r4.pc.alternative section.techniques-list.spells-list div.weapons .item-border:hover,
-div.l5r4.pc.alternative section.equipment-list div.techniques .item-border:hover,
-div.l5r4.pc.alternative section.equipment-list div.spells .item-border:hover,
-div.l5r4.pc.alternative section.equipment-list div.weapons .item-border:hover {
+div.l5r4.pc.alternative .window-content form section.techniques-list.spells-list div.techniques .item-border:hover,
+div.l5r4.pc.alternative .window-content form section.techniques-list.spells-list div.spells .item-border:hover,
+div.l5r4.pc.alternative .window-content form section.techniques-list.spells-list div.weapons .item-border:hover,
+div.l5r4.pc.alternative .window-content form section.equipment-list div.techniques .item-border:hover,
+div.l5r4.pc.alternative .window-content form section.equipment-list div.spells .item-border:hover,
+div.l5r4.pc.alternative .window-content form section.equipment-list div.weapons .item-border:hover {
   background-color: rgba(100, 90, 34, 0.1);
 }
-div.l5r4.pc.alternative section.techniques-list.spells-list div.techniques .item-border .technique-stats,
-div.l5r4.pc.alternative section.techniques-list.spells-list div.techniques .item-border .spell-stats,
-div.l5r4.pc.alternative section.techniques-list.spells-list div.techniques .item-border .weapon-stats,
-div.l5r4.pc.alternative section.techniques-list.spells-list div.techniques .item-border .armor-stats,
-div.l5r4.pc.alternative section.techniques-list.spells-list div.spells .item-border .technique-stats,
-div.l5r4.pc.alternative section.techniques-list.spells-list div.spells .item-border .spell-stats,
-div.l5r4.pc.alternative section.techniques-list.spells-list div.spells .item-border .weapon-stats,
-div.l5r4.pc.alternative section.techniques-list.spells-list div.spells .item-border .armor-stats,
-div.l5r4.pc.alternative section.techniques-list.spells-list div.weapons .item-border .technique-stats,
-div.l5r4.pc.alternative section.techniques-list.spells-list div.weapons .item-border .spell-stats,
-div.l5r4.pc.alternative section.techniques-list.spells-list div.weapons .item-border .weapon-stats,
-div.l5r4.pc.alternative section.techniques-list.spells-list div.weapons .item-border .armor-stats,
-div.l5r4.pc.alternative section.equipment-list div.techniques .item-border .technique-stats,
-div.l5r4.pc.alternative section.equipment-list div.techniques .item-border .spell-stats,
-div.l5r4.pc.alternative section.equipment-list div.techniques .item-border .weapon-stats,
-div.l5r4.pc.alternative section.equipment-list div.techniques .item-border .armor-stats,
-div.l5r4.pc.alternative section.equipment-list div.spells .item-border .technique-stats,
-div.l5r4.pc.alternative section.equipment-list div.spells .item-border .spell-stats,
-div.l5r4.pc.alternative section.equipment-list div.spells .item-border .weapon-stats,
-div.l5r4.pc.alternative section.equipment-list div.spells .item-border .armor-stats,
-div.l5r4.pc.alternative section.equipment-list div.weapons .item-border .technique-stats,
-div.l5r4.pc.alternative section.equipment-list div.weapons .item-border .spell-stats,
-div.l5r4.pc.alternative section.equipment-list div.weapons .item-border .weapon-stats,
-div.l5r4.pc.alternative section.equipment-list div.weapons .item-border .armor-stats {
+div.l5r4.pc.alternative .window-content form section.techniques-list.spells-list div.techniques .item-border .technique-stats,
+div.l5r4.pc.alternative .window-content form section.techniques-list.spells-list div.techniques .item-border .spell-stats,
+div.l5r4.pc.alternative .window-content form section.techniques-list.spells-list div.techniques .item-border .weapon-stats,
+div.l5r4.pc.alternative .window-content form section.techniques-list.spells-list div.techniques .item-border .armor-stats,
+div.l5r4.pc.alternative .window-content form section.techniques-list.spells-list div.spells .item-border .technique-stats,
+div.l5r4.pc.alternative .window-content form section.techniques-list.spells-list div.spells .item-border .spell-stats,
+div.l5r4.pc.alternative .window-content form section.techniques-list.spells-list div.spells .item-border .weapon-stats,
+div.l5r4.pc.alternative .window-content form section.techniques-list.spells-list div.spells .item-border .armor-stats,
+div.l5r4.pc.alternative .window-content form section.techniques-list.spells-list div.weapons .item-border .technique-stats,
+div.l5r4.pc.alternative .window-content form section.techniques-list.spells-list div.weapons .item-border .spell-stats,
+div.l5r4.pc.alternative .window-content form section.techniques-list.spells-list div.weapons .item-border .weapon-stats,
+div.l5r4.pc.alternative .window-content form section.techniques-list.spells-list div.weapons .item-border .armor-stats,
+div.l5r4.pc.alternative .window-content form section.equipment-list div.techniques .item-border .technique-stats,
+div.l5r4.pc.alternative .window-content form section.equipment-list div.techniques .item-border .spell-stats,
+div.l5r4.pc.alternative .window-content form section.equipment-list div.techniques .item-border .weapon-stats,
+div.l5r4.pc.alternative .window-content form section.equipment-list div.techniques .item-border .armor-stats,
+div.l5r4.pc.alternative .window-content form section.equipment-list div.spells .item-border .technique-stats,
+div.l5r4.pc.alternative .window-content form section.equipment-list div.spells .item-border .spell-stats,
+div.l5r4.pc.alternative .window-content form section.equipment-list div.spells .item-border .weapon-stats,
+div.l5r4.pc.alternative .window-content form section.equipment-list div.spells .item-border .armor-stats,
+div.l5r4.pc.alternative .window-content form section.equipment-list div.weapons .item-border .technique-stats,
+div.l5r4.pc.alternative .window-content form section.equipment-list div.weapons .item-border .spell-stats,
+div.l5r4.pc.alternative .window-content form section.equipment-list div.weapons .item-border .weapon-stats,
+div.l5r4.pc.alternative .window-content form section.equipment-list div.weapons .item-border .armor-stats {
   max-height: 1px;
   transition: 0.4s;
   overflow: hidden;
+  max-height: 0px;
+  overflow: scroll;
+  justify-content: space-between;
+  display: flex;
 }
-div.l5r4.pc.alternative section.techniques-list.spells-list div.techniques .item-border.expanded .technique-stats,
-div.l5r4.pc.alternative section.techniques-list.spells-list div.techniques .item-border.expanded .spell-stats,
-div.l5r4.pc.alternative section.techniques-list.spells-list div.techniques .item-border.expanded .weapon-stats,
-div.l5r4.pc.alternative section.techniques-list.spells-list div.techniques .item-border.expanded .armor-stats,
-div.l5r4.pc.alternative section.techniques-list.spells-list div.spells .item-border.expanded .technique-stats,
-div.l5r4.pc.alternative section.techniques-list.spells-list div.spells .item-border.expanded .spell-stats,
-div.l5r4.pc.alternative section.techniques-list.spells-list div.spells .item-border.expanded .weapon-stats,
-div.l5r4.pc.alternative section.techniques-list.spells-list div.spells .item-border.expanded .armor-stats,
-div.l5r4.pc.alternative section.techniques-list.spells-list div.weapons .item-border.expanded .technique-stats,
-div.l5r4.pc.alternative section.techniques-list.spells-list div.weapons .item-border.expanded .spell-stats,
-div.l5r4.pc.alternative section.techniques-list.spells-list div.weapons .item-border.expanded .weapon-stats,
-div.l5r4.pc.alternative section.techniques-list.spells-list div.weapons .item-border.expanded .armor-stats,
-div.l5r4.pc.alternative section.equipment-list div.techniques .item-border.expanded .technique-stats,
-div.l5r4.pc.alternative section.equipment-list div.techniques .item-border.expanded .spell-stats,
-div.l5r4.pc.alternative section.equipment-list div.techniques .item-border.expanded .weapon-stats,
-div.l5r4.pc.alternative section.equipment-list div.techniques .item-border.expanded .armor-stats,
-div.l5r4.pc.alternative section.equipment-list div.spells .item-border.expanded .technique-stats,
-div.l5r4.pc.alternative section.equipment-list div.spells .item-border.expanded .spell-stats,
-div.l5r4.pc.alternative section.equipment-list div.spells .item-border.expanded .weapon-stats,
-div.l5r4.pc.alternative section.equipment-list div.spells .item-border.expanded .armor-stats,
-div.l5r4.pc.alternative section.equipment-list div.weapons .item-border.expanded .technique-stats,
-div.l5r4.pc.alternative section.equipment-list div.weapons .item-border.expanded .spell-stats,
-div.l5r4.pc.alternative section.equipment-list div.weapons .item-border.expanded .weapon-stats,
-div.l5r4.pc.alternative section.equipment-list div.weapons .item-border.expanded .armor-stats {
+div.l5r4.pc.alternative .window-content form section.techniques-list.spells-list div.techniques .item-border.expanded .technique-stats,
+div.l5r4.pc.alternative .window-content form section.techniques-list.spells-list div.techniques .item-border.expanded .spell-stats,
+div.l5r4.pc.alternative .window-content form section.techniques-list.spells-list div.techniques .item-border.expanded .weapon-stats,
+div.l5r4.pc.alternative .window-content form section.techniques-list.spells-list div.techniques .item-border.expanded .armor-stats,
+div.l5r4.pc.alternative .window-content form section.techniques-list.spells-list div.spells .item-border.expanded .technique-stats,
+div.l5r4.pc.alternative .window-content form section.techniques-list.spells-list div.spells .item-border.expanded .spell-stats,
+div.l5r4.pc.alternative .window-content form section.techniques-list.spells-list div.spells .item-border.expanded .weapon-stats,
+div.l5r4.pc.alternative .window-content form section.techniques-list.spells-list div.spells .item-border.expanded .armor-stats,
+div.l5r4.pc.alternative .window-content form section.techniques-list.spells-list div.weapons .item-border.expanded .technique-stats,
+div.l5r4.pc.alternative .window-content form section.techniques-list.spells-list div.weapons .item-border.expanded .spell-stats,
+div.l5r4.pc.alternative .window-content form section.techniques-list.spells-list div.weapons .item-border.expanded .weapon-stats,
+div.l5r4.pc.alternative .window-content form section.techniques-list.spells-list div.weapons .item-border.expanded .armor-stats,
+div.l5r4.pc.alternative .window-content form section.equipment-list div.techniques .item-border.expanded .technique-stats,
+div.l5r4.pc.alternative .window-content form section.equipment-list div.techniques .item-border.expanded .spell-stats,
+div.l5r4.pc.alternative .window-content form section.equipment-list div.techniques .item-border.expanded .weapon-stats,
+div.l5r4.pc.alternative .window-content form section.equipment-list div.techniques .item-border.expanded .armor-stats,
+div.l5r4.pc.alternative .window-content form section.equipment-list div.spells .item-border.expanded .technique-stats,
+div.l5r4.pc.alternative .window-content form section.equipment-list div.spells .item-border.expanded .spell-stats,
+div.l5r4.pc.alternative .window-content form section.equipment-list div.spells .item-border.expanded .weapon-stats,
+div.l5r4.pc.alternative .window-content form section.equipment-list div.spells .item-border.expanded .armor-stats,
+div.l5r4.pc.alternative .window-content form section.equipment-list div.weapons .item-border.expanded .technique-stats,
+div.l5r4.pc.alternative .window-content form section.equipment-list div.weapons .item-border.expanded .spell-stats,
+div.l5r4.pc.alternative .window-content form section.equipment-list div.weapons .item-border.expanded .weapon-stats,
+div.l5r4.pc.alternative .window-content form section.equipment-list div.weapons .item-border.expanded .armor-stats {
   max-height: 400px;
   overflow: scroll;
 }
-div.l5r4.pc.alternative section.techniques-list.spells-list div.techniques .item-border .details,
-div.l5r4.pc.alternative section.techniques-list.spells-list div.spells .item-border .details,
-div.l5r4.pc.alternative section.techniques-list.spells-list div.weapons .item-border .details,
-div.l5r4.pc.alternative section.equipment-list div.techniques .item-border .details,
-div.l5r4.pc.alternative section.equipment-list div.spells .item-border .details,
-div.l5r4.pc.alternative section.equipment-list div.weapons .item-border .details {
+div.l5r4.pc.alternative .window-content form section.techniques-list.spells-list div.techniques .item-border.expanded .technique-stats:first-child,
+div.l5r4.pc.alternative .window-content form section.techniques-list.spells-list div.techniques .item-border.expanded .spell-stats:first-child,
+div.l5r4.pc.alternative .window-content form section.techniques-list.spells-list div.techniques .item-border.expanded .weapon-stats:first-child,
+div.l5r4.pc.alternative .window-content form section.techniques-list.spells-list div.techniques .item-border.expanded .armor-stats:first-child,
+div.l5r4.pc.alternative .window-content form section.techniques-list.spells-list div.spells .item-border.expanded .technique-stats:first-child,
+div.l5r4.pc.alternative .window-content form section.techniques-list.spells-list div.spells .item-border.expanded .spell-stats:first-child,
+div.l5r4.pc.alternative .window-content form section.techniques-list.spells-list div.spells .item-border.expanded .weapon-stats:first-child,
+div.l5r4.pc.alternative .window-content form section.techniques-list.spells-list div.spells .item-border.expanded .armor-stats:first-child,
+div.l5r4.pc.alternative .window-content form section.techniques-list.spells-list div.weapons .item-border.expanded .technique-stats:first-child,
+div.l5r4.pc.alternative .window-content form section.techniques-list.spells-list div.weapons .item-border.expanded .spell-stats:first-child,
+div.l5r4.pc.alternative .window-content form section.techniques-list.spells-list div.weapons .item-border.expanded .weapon-stats:first-child,
+div.l5r4.pc.alternative .window-content form section.techniques-list.spells-list div.weapons .item-border.expanded .armor-stats:first-child,
+div.l5r4.pc.alternative .window-content form section.equipment-list div.techniques .item-border.expanded .technique-stats:first-child,
+div.l5r4.pc.alternative .window-content form section.equipment-list div.techniques .item-border.expanded .spell-stats:first-child,
+div.l5r4.pc.alternative .window-content form section.equipment-list div.techniques .item-border.expanded .weapon-stats:first-child,
+div.l5r4.pc.alternative .window-content form section.equipment-list div.techniques .item-border.expanded .armor-stats:first-child,
+div.l5r4.pc.alternative .window-content form section.equipment-list div.spells .item-border.expanded .technique-stats:first-child,
+div.l5r4.pc.alternative .window-content form section.equipment-list div.spells .item-border.expanded .spell-stats:first-child,
+div.l5r4.pc.alternative .window-content form section.equipment-list div.spells .item-border.expanded .weapon-stats:first-child,
+div.l5r4.pc.alternative .window-content form section.equipment-list div.spells .item-border.expanded .armor-stats:first-child,
+div.l5r4.pc.alternative .window-content form section.equipment-list div.weapons .item-border.expanded .technique-stats:first-child,
+div.l5r4.pc.alternative .window-content form section.equipment-list div.weapons .item-border.expanded .spell-stats:first-child,
+div.l5r4.pc.alternative .window-content form section.equipment-list div.weapons .item-border.expanded .weapon-stats:first-child,
+div.l5r4.pc.alternative .window-content form section.equipment-list div.weapons .item-border.expanded .armor-stats:first-child {
+  max-width: 20%;
+}
+div.l5r4.pc.alternative .window-content form section.techniques-list.spells-list div.techniques .item-border .details,
+div.l5r4.pc.alternative .window-content form section.techniques-list.spells-list div.spells .item-border .details,
+div.l5r4.pc.alternative .window-content form section.techniques-list.spells-list div.weapons .item-border .details,
+div.l5r4.pc.alternative .window-content form section.equipment-list div.techniques .item-border .details,
+div.l5r4.pc.alternative .window-content form section.equipment-list div.spells .item-border .details,
+div.l5r4.pc.alternative .window-content form section.equipment-list div.weapons .item-border .details {
   margin: 5px;
   padding: 3px;
   box-shadow: 0px 0px 30px rgba(128, 128, 128, 0.205) inset;
 }
-div.l5r4.pc.alternative section.techniques-list.spells-list div.techniques .item-border .item .weapon-name,
-div.l5r4.pc.alternative section.techniques-list.spells-list div.techniques .item-border .item .armor-name,
-div.l5r4.pc.alternative section.techniques-list.spells-list div.techniques .item-border .item .technique-name,
-div.l5r4.pc.alternative section.techniques-list.spells-list div.techniques .item-border .item .spell-name,
-div.l5r4.pc.alternative section.techniques-list.spells-list div.spells .item-border .item .weapon-name,
-div.l5r4.pc.alternative section.techniques-list.spells-list div.spells .item-border .item .armor-name,
-div.l5r4.pc.alternative section.techniques-list.spells-list div.spells .item-border .item .technique-name,
-div.l5r4.pc.alternative section.techniques-list.spells-list div.spells .item-border .item .spell-name,
-div.l5r4.pc.alternative section.techniques-list.spells-list div.weapons .item-border .item .weapon-name,
-div.l5r4.pc.alternative section.techniques-list.spells-list div.weapons .item-border .item .armor-name,
-div.l5r4.pc.alternative section.techniques-list.spells-list div.weapons .item-border .item .technique-name,
-div.l5r4.pc.alternative section.techniques-list.spells-list div.weapons .item-border .item .spell-name,
-div.l5r4.pc.alternative section.equipment-list div.techniques .item-border .item .weapon-name,
-div.l5r4.pc.alternative section.equipment-list div.techniques .item-border .item .armor-name,
-div.l5r4.pc.alternative section.equipment-list div.techniques .item-border .item .technique-name,
-div.l5r4.pc.alternative section.equipment-list div.techniques .item-border .item .spell-name,
-div.l5r4.pc.alternative section.equipment-list div.spells .item-border .item .weapon-name,
-div.l5r4.pc.alternative section.equipment-list div.spells .item-border .item .armor-name,
-div.l5r4.pc.alternative section.equipment-list div.spells .item-border .item .technique-name,
-div.l5r4.pc.alternative section.equipment-list div.spells .item-border .item .spell-name,
-div.l5r4.pc.alternative section.equipment-list div.weapons .item-border .item .weapon-name,
-div.l5r4.pc.alternative section.equipment-list div.weapons .item-border .item .armor-name,
-div.l5r4.pc.alternative section.equipment-list div.weapons .item-border .item .technique-name,
-div.l5r4.pc.alternative section.equipment-list div.weapons .item-border .item .spell-name {
+div.l5r4.pc.alternative .window-content form section.techniques-list.spells-list div.techniques .item-border .item,
+div.l5r4.pc.alternative .window-content form section.techniques-list.spells-list div.spells .item-border .item,
+div.l5r4.pc.alternative .window-content form section.techniques-list.spells-list div.weapons .item-border .item,
+div.l5r4.pc.alternative .window-content form section.equipment-list div.techniques .item-border .item,
+div.l5r4.pc.alternative .window-content form section.equipment-list div.spells .item-border .item,
+div.l5r4.pc.alternative .window-content form section.equipment-list div.weapons .item-border .item {
+  flex-direction: column;
+  display: flex;
+}
+div.l5r4.pc.alternative .window-content form section.techniques-list.spells-list div.techniques .item-border .item .weapon-name,
+div.l5r4.pc.alternative .window-content form section.techniques-list.spells-list div.techniques .item-border .item .armor-name,
+div.l5r4.pc.alternative .window-content form section.techniques-list.spells-list div.techniques .item-border .item .technique-name,
+div.l5r4.pc.alternative .window-content form section.techniques-list.spells-list div.techniques .item-border .item .spell-name,
+div.l5r4.pc.alternative .window-content form section.techniques-list.spells-list div.spells .item-border .item .weapon-name,
+div.l5r4.pc.alternative .window-content form section.techniques-list.spells-list div.spells .item-border .item .armor-name,
+div.l5r4.pc.alternative .window-content form section.techniques-list.spells-list div.spells .item-border .item .technique-name,
+div.l5r4.pc.alternative .window-content form section.techniques-list.spells-list div.spells .item-border .item .spell-name,
+div.l5r4.pc.alternative .window-content form section.techniques-list.spells-list div.weapons .item-border .item .weapon-name,
+div.l5r4.pc.alternative .window-content form section.techniques-list.spells-list div.weapons .item-border .item .armor-name,
+div.l5r4.pc.alternative .window-content form section.techniques-list.spells-list div.weapons .item-border .item .technique-name,
+div.l5r4.pc.alternative .window-content form section.techniques-list.spells-list div.weapons .item-border .item .spell-name,
+div.l5r4.pc.alternative .window-content form section.equipment-list div.techniques .item-border .item .weapon-name,
+div.l5r4.pc.alternative .window-content form section.equipment-list div.techniques .item-border .item .armor-name,
+div.l5r4.pc.alternative .window-content form section.equipment-list div.techniques .item-border .item .technique-name,
+div.l5r4.pc.alternative .window-content form section.equipment-list div.techniques .item-border .item .spell-name,
+div.l5r4.pc.alternative .window-content form section.equipment-list div.spells .item-border .item .weapon-name,
+div.l5r4.pc.alternative .window-content form section.equipment-list div.spells .item-border .item .armor-name,
+div.l5r4.pc.alternative .window-content form section.equipment-list div.spells .item-border .item .technique-name,
+div.l5r4.pc.alternative .window-content form section.equipment-list div.spells .item-border .item .spell-name,
+div.l5r4.pc.alternative .window-content form section.equipment-list div.weapons .item-border .item .weapon-name,
+div.l5r4.pc.alternative .window-content form section.equipment-list div.weapons .item-border .item .armor-name,
+div.l5r4.pc.alternative .window-content form section.equipment-list div.weapons .item-border .item .technique-name,
+div.l5r4.pc.alternative .window-content form section.equipment-list div.weapons .item-border .item .spell-name {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
 }
-div.l5r4.pc.alternative section.techniques-list.spells-list div.techniques .item-border .item .weapon-name img,
-div.l5r4.pc.alternative section.techniques-list.spells-list div.techniques .item-border .item .armor-name img,
-div.l5r4.pc.alternative section.techniques-list.spells-list div.techniques .item-border .item .technique-name img,
-div.l5r4.pc.alternative section.techniques-list.spells-list div.techniques .item-border .item .spell-name img,
-div.l5r4.pc.alternative section.techniques-list.spells-list div.spells .item-border .item .weapon-name img,
-div.l5r4.pc.alternative section.techniques-list.spells-list div.spells .item-border .item .armor-name img,
-div.l5r4.pc.alternative section.techniques-list.spells-list div.spells .item-border .item .technique-name img,
-div.l5r4.pc.alternative section.techniques-list.spells-list div.spells .item-border .item .spell-name img,
-div.l5r4.pc.alternative section.techniques-list.spells-list div.weapons .item-border .item .weapon-name img,
-div.l5r4.pc.alternative section.techniques-list.spells-list div.weapons .item-border .item .armor-name img,
-div.l5r4.pc.alternative section.techniques-list.spells-list div.weapons .item-border .item .technique-name img,
-div.l5r4.pc.alternative section.techniques-list.spells-list div.weapons .item-border .item .spell-name img,
-div.l5r4.pc.alternative section.equipment-list div.techniques .item-border .item .weapon-name img,
-div.l5r4.pc.alternative section.equipment-list div.techniques .item-border .item .armor-name img,
-div.l5r4.pc.alternative section.equipment-list div.techniques .item-border .item .technique-name img,
-div.l5r4.pc.alternative section.equipment-list div.techniques .item-border .item .spell-name img,
-div.l5r4.pc.alternative section.equipment-list div.spells .item-border .item .weapon-name img,
-div.l5r4.pc.alternative section.equipment-list div.spells .item-border .item .armor-name img,
-div.l5r4.pc.alternative section.equipment-list div.spells .item-border .item .technique-name img,
-div.l5r4.pc.alternative section.equipment-list div.spells .item-border .item .spell-name img,
-div.l5r4.pc.alternative section.equipment-list div.weapons .item-border .item .weapon-name img,
-div.l5r4.pc.alternative section.equipment-list div.weapons .item-border .item .armor-name img,
-div.l5r4.pc.alternative section.equipment-list div.weapons .item-border .item .technique-name img,
-div.l5r4.pc.alternative section.equipment-list div.weapons .item-border .item .spell-name img {
+div.l5r4.pc.alternative .window-content form section.techniques-list.spells-list div.techniques .item-border .item .weapon-name img,
+div.l5r4.pc.alternative .window-content form section.techniques-list.spells-list div.techniques .item-border .item .armor-name img,
+div.l5r4.pc.alternative .window-content form section.techniques-list.spells-list div.techniques .item-border .item .technique-name img,
+div.l5r4.pc.alternative .window-content form section.techniques-list.spells-list div.techniques .item-border .item .spell-name img,
+div.l5r4.pc.alternative .window-content form section.techniques-list.spells-list div.spells .item-border .item .weapon-name img,
+div.l5r4.pc.alternative .window-content form section.techniques-list.spells-list div.spells .item-border .item .armor-name img,
+div.l5r4.pc.alternative .window-content form section.techniques-list.spells-list div.spells .item-border .item .technique-name img,
+div.l5r4.pc.alternative .window-content form section.techniques-list.spells-list div.spells .item-border .item .spell-name img,
+div.l5r4.pc.alternative .window-content form section.techniques-list.spells-list div.weapons .item-border .item .weapon-name img,
+div.l5r4.pc.alternative .window-content form section.techniques-list.spells-list div.weapons .item-border .item .armor-name img,
+div.l5r4.pc.alternative .window-content form section.techniques-list.spells-list div.weapons .item-border .item .technique-name img,
+div.l5r4.pc.alternative .window-content form section.techniques-list.spells-list div.weapons .item-border .item .spell-name img,
+div.l5r4.pc.alternative .window-content form section.equipment-list div.techniques .item-border .item .weapon-name img,
+div.l5r4.pc.alternative .window-content form section.equipment-list div.techniques .item-border .item .armor-name img,
+div.l5r4.pc.alternative .window-content form section.equipment-list div.techniques .item-border .item .technique-name img,
+div.l5r4.pc.alternative .window-content form section.equipment-list div.techniques .item-border .item .spell-name img,
+div.l5r4.pc.alternative .window-content form section.equipment-list div.spells .item-border .item .weapon-name img,
+div.l5r4.pc.alternative .window-content form section.equipment-list div.spells .item-border .item .armor-name img,
+div.l5r4.pc.alternative .window-content form section.equipment-list div.spells .item-border .item .technique-name img,
+div.l5r4.pc.alternative .window-content form section.equipment-list div.spells .item-border .item .spell-name img,
+div.l5r4.pc.alternative .window-content form section.equipment-list div.weapons .item-border .item .weapon-name img,
+div.l5r4.pc.alternative .window-content form section.equipment-list div.weapons .item-border .item .armor-name img,
+div.l5r4.pc.alternative .window-content form section.equipment-list div.weapons .item-border .item .technique-name img,
+div.l5r4.pc.alternative .window-content form section.equipment-list div.weapons .item-border .item .spell-name img {
   max-height: 2em;
   border: none;
   margin: 0% 15%;
   width: 2em;
   height: 2em;
 }
-div.l5r4.pc.alternative section.techniques-list.spells-list div.techniques .item-border .item .weapon-name .buttons a,
-div.l5r4.pc.alternative section.techniques-list.spells-list div.techniques .item-border .item .armor-name .buttons a,
-div.l5r4.pc.alternative section.techniques-list.spells-list div.techniques .item-border .item .technique-name .buttons a,
-div.l5r4.pc.alternative section.techniques-list.spells-list div.techniques .item-border .item .spell-name .buttons a,
-div.l5r4.pc.alternative section.techniques-list.spells-list div.spells .item-border .item .weapon-name .buttons a,
-div.l5r4.pc.alternative section.techniques-list.spells-list div.spells .item-border .item .armor-name .buttons a,
-div.l5r4.pc.alternative section.techniques-list.spells-list div.spells .item-border .item .technique-name .buttons a,
-div.l5r4.pc.alternative section.techniques-list.spells-list div.spells .item-border .item .spell-name .buttons a,
-div.l5r4.pc.alternative section.techniques-list.spells-list div.weapons .item-border .item .weapon-name .buttons a,
-div.l5r4.pc.alternative section.techniques-list.spells-list div.weapons .item-border .item .armor-name .buttons a,
-div.l5r4.pc.alternative section.techniques-list.spells-list div.weapons .item-border .item .technique-name .buttons a,
-div.l5r4.pc.alternative section.techniques-list.spells-list div.weapons .item-border .item .spell-name .buttons a,
-div.l5r4.pc.alternative section.equipment-list div.techniques .item-border .item .weapon-name .buttons a,
-div.l5r4.pc.alternative section.equipment-list div.techniques .item-border .item .armor-name .buttons a,
-div.l5r4.pc.alternative section.equipment-list div.techniques .item-border .item .technique-name .buttons a,
-div.l5r4.pc.alternative section.equipment-list div.techniques .item-border .item .spell-name .buttons a,
-div.l5r4.pc.alternative section.equipment-list div.spells .item-border .item .weapon-name .buttons a,
-div.l5r4.pc.alternative section.equipment-list div.spells .item-border .item .armor-name .buttons a,
-div.l5r4.pc.alternative section.equipment-list div.spells .item-border .item .technique-name .buttons a,
-div.l5r4.pc.alternative section.equipment-list div.spells .item-border .item .spell-name .buttons a,
-div.l5r4.pc.alternative section.equipment-list div.weapons .item-border .item .weapon-name .buttons a,
-div.l5r4.pc.alternative section.equipment-list div.weapons .item-border .item .armor-name .buttons a,
-div.l5r4.pc.alternative section.equipment-list div.weapons .item-border .item .technique-name .buttons a,
-div.l5r4.pc.alternative section.equipment-list div.weapons .item-border .item .spell-name .buttons a {
+div.l5r4.pc.alternative .window-content form section.techniques-list.spells-list div.techniques .item-border .item .weapon-name .buttons a,
+div.l5r4.pc.alternative .window-content form section.techniques-list.spells-list div.techniques .item-border .item .armor-name .buttons a,
+div.l5r4.pc.alternative .window-content form section.techniques-list.spells-list div.techniques .item-border .item .technique-name .buttons a,
+div.l5r4.pc.alternative .window-content form section.techniques-list.spells-list div.techniques .item-border .item .spell-name .buttons a,
+div.l5r4.pc.alternative .window-content form section.techniques-list.spells-list div.spells .item-border .item .weapon-name .buttons a,
+div.l5r4.pc.alternative .window-content form section.techniques-list.spells-list div.spells .item-border .item .armor-name .buttons a,
+div.l5r4.pc.alternative .window-content form section.techniques-list.spells-list div.spells .item-border .item .technique-name .buttons a,
+div.l5r4.pc.alternative .window-content form section.techniques-list.spells-list div.spells .item-border .item .spell-name .buttons a,
+div.l5r4.pc.alternative .window-content form section.techniques-list.spells-list div.weapons .item-border .item .weapon-name .buttons a,
+div.l5r4.pc.alternative .window-content form section.techniques-list.spells-list div.weapons .item-border .item .armor-name .buttons a,
+div.l5r4.pc.alternative .window-content form section.techniques-list.spells-list div.weapons .item-border .item .technique-name .buttons a,
+div.l5r4.pc.alternative .window-content form section.techniques-list.spells-list div.weapons .item-border .item .spell-name .buttons a,
+div.l5r4.pc.alternative .window-content form section.equipment-list div.techniques .item-border .item .weapon-name .buttons a,
+div.l5r4.pc.alternative .window-content form section.equipment-list div.techniques .item-border .item .armor-name .buttons a,
+div.l5r4.pc.alternative .window-content form section.equipment-list div.techniques .item-border .item .technique-name .buttons a,
+div.l5r4.pc.alternative .window-content form section.equipment-list div.techniques .item-border .item .spell-name .buttons a,
+div.l5r4.pc.alternative .window-content form section.equipment-list div.spells .item-border .item .weapon-name .buttons a,
+div.l5r4.pc.alternative .window-content form section.equipment-list div.spells .item-border .item .armor-name .buttons a,
+div.l5r4.pc.alternative .window-content form section.equipment-list div.spells .item-border .item .technique-name .buttons a,
+div.l5r4.pc.alternative .window-content form section.equipment-list div.spells .item-border .item .spell-name .buttons a,
+div.l5r4.pc.alternative .window-content form section.equipment-list div.weapons .item-border .item .weapon-name .buttons a,
+div.l5r4.pc.alternative .window-content form section.equipment-list div.weapons .item-border .item .armor-name .buttons a,
+div.l5r4.pc.alternative .window-content form section.equipment-list div.weapons .item-border .item .technique-name .buttons a,
+div.l5r4.pc.alternative .window-content form section.equipment-list div.weapons .item-border .item .spell-name .buttons a {
   width: 24px;
   height: 1em;
   display: inline-flex;
   vertical-align: middle;
 }
-div.l5r4.pc.alternative .equipment-list,
-div.l5r4.pc.alternative .weapons-list {
-  display: unset;
+div.l5r4.pc.alternative .window-content form .equipment-list,
+div.l5r4.pc.alternative .window-content form .weapons-list {
+  display: flex;
 }
-div.l5r4.pc.alternative .equipment-list img,
-div.l5r4.pc.alternative .weapons-list img {
+div.l5r4.pc.alternative .window-content form .equipment-list img,
+div.l5r4.pc.alternative .window-content form .weapons-list img {
   max-height: 2em;
   border: none;
   margin: 0% 15%;
   width: 2em;
   height: 2em;
 }
-div.l5r4.pc.alternative .item {
+div.l5r4.pc.alternative .window-content form .item {
   border-bottom: 1px solid black;
 }
-div.l5r4.pc.alternative div.sidebar {
+div.l5r4.pc.alternative .window-content form div.sidebar {
   margin-left: 20px;
   box-shadow: -30px 0px 60px rgba(0, 0, 0, 0.438);
   background: url(/systems/l5r4/assets/textures/scroll2.webp);
   background-size: auto 100%;
-  height: -webkit-fit-content;
-  height: -moz-fit-content;
   height: fit-content;
 }
-div.l5r4.pc.alternative .pc-info {
+div.l5r4.pc.alternative .window-content form .pc-info {
   flex-direction: column;
   background: url(/systems/l5r4/assets/textures/scroll2.webp);
   background-size: 100% auto;
 }
-div.l5r4.pc.alternative .pc-info .info-row {
+div.l5r4.pc.alternative .window-content form .pc-info .info-row {
   box-shadow: 0px 20px 60px;
   margin-bottom: 20px;
   padding: 0px 50px;
@@ -300,52 +344,50 @@ div.l5r4.pc.alternative .pc-info .info-row {
   overflow: hidden;
   transition: 0.3s;
 }
-div.l5r4.pc.alternative .pc-info .info-row .char-name {
+div.l5r4.pc.alternative .window-content form .pc-info .info-row .char-name {
   flex: 0 0 50%;
 }
-div.l5r4.pc.alternative .pc-info .info-row.hidden {
+div.l5r4.pc.alternative .window-content form .pc-info .info-row.hidden {
   max-height: 1px;
 }
-div.l5r4.pc.alternative .pc-info:hover .hidden {
+div.l5r4.pc.alternative .window-content form .pc-info:hover .hidden {
   max-height: 80px;
 }
-div.l5r4.pc.alternative .pc-info input {
+div.l5r4.pc.alternative .window-content form .pc-info input {
   font-family: "brush";
   font-size: 2em;
   text-shadow: 0px 0px 8px white;
 }
-div.l5r4.pc.alternative .pc-info h3 {
+div.l5r4.pc.alternative .window-content form .pc-info h3 {
   position: relative;
   /* top: 10px; */
   left: -15px;
   transform: rotate(-5deg);
 }
-div.l5r4.pc.alternative .ring-roll img {
-  filter: brightness(0.8) drop-shadow(0px 0px 3px gray);
+div.l5r4.pc.alternative .window-content form .ring-roll img {
+  filter: brightness(0.8) grayscale(0.8) drop-shadow(0px 0px 3px gray) hue-rotate(20deg);
   transform: scale(1);
   transition: 0.15s ease-out;
   content: "";
-  width: 85px;
-  height: 85px;
 }
-div.l5r4.pc.alternative .ring-roll img:hover {
-  filter: brightness(1) drop-shadow(0px 5px 6px #272626);
+div.l5r4.pc.alternative .window-content form .ring-roll img:hover {
+  filter: brightness(1) grayscale(0) drop-shadow(0px 5px 6px #272626) hue-rotate(0deg);
 }
-div.l5r4.pc.alternative .ring-roll img:active {
+div.l5r4.pc.alternative .window-content form .ring-roll img:active {
   transform: scale(0.8);
 }
-div.l5r4.pc.alternative .notes-toggle {
+div.l5r4.pc.alternative .window-content form .notes-toggle {
   position: absolute;
   top: 40px;
   right: -10px;
 }
-div.l5r4.pc.alternative .notes-toggle img {
+div.l5r4.pc.alternative .window-content form .notes-toggle img {
   width: 3em;
   height: 3em;
   border: none;
   transform: rotate(-30deg);
 }
-div.l5r4.pc.alternative .notes-toggle .notes {
+div.l5r4.pc.alternative .window-content form .notes-toggle .notes {
   transition: width 0s, height 0.3s;
   position: absolute;
   padding: 0;
@@ -358,10 +400,10 @@ div.l5r4.pc.alternative .notes-toggle .notes {
   z-index: -1;
   overflow: hidden;
 }
-div.l5r4.pc.alternative .notes-toggle:hover .notes {
+div.l5r4.pc.alternative .window-content form .notes-toggle:hover .notes {
   padding-top: 10px;
   padding-left: 20px;
   width: 300px;
   height: 450px;
   overflow: scroll;
-}/*# sourceMappingURL=module.css.map */
+}
