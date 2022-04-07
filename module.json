@@ -2,7 +2,7 @@
     "name": "alternative-L5R4e-sheet",
     "title": "alternate sheet for L5R 4e",
     "description": "a new shhet for l5r 4e",
-    "version": "This is auto replaced",
+    "version": "1",
     "library": "false",
     "manifestPlusVersion": "1.0.0",
     "minimumCoreVersion": "9",
@@ -32,9 +32,9 @@
     }],
     "url": "https://github.com/rwanoux/alternative-L5R4e-sheet",
     "manifest": "https://raw.githubusercontent.com/rwanoux/alternative-L5R4e-sheet/master/module.json",
-    "download": "https://github.com/rwanoux/alternative-L5R4e-sheet/archive/refs/heads/master.zip",
+    "download": "https://github.com/rwanoux/alternative-L5R4e-sheet/blob/master/alternative-L5R4e-sheet.zip?raw=true",
     "media": [{
         "type": "icon",
-        "url": "https://avatars2.githubusercontent.com/u/71292812?s=400&u=ccdb4eeb7abf551ca8f314e5a9bfd0479a4d3d41&v=4"
+        "url": "https://avatars.githubusercontent.com/u/18176317?s=400&u=c294e17ba5d3585ff985a5e6550c007d0b197135&v=4"
     }]
 }
