@@ -8,7 +8,7 @@
     "minimumCoreVersion": "9",
     "compatibleCoreVersion": "9",
     "authors": [{
-        "name": "rwan",
+        "name": "rwan"
     }],
     "dependencies": [{
         "name": "l5r4",
